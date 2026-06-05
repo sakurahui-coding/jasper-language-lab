@@ -6,7 +6,7 @@ Estimated Time: 12 minutes
 
 ## 1. Lesson Overview
 
-這是一篇短篇自建示範教材，幫助 Jasper 練習從歷史與人類行為中找出不變的模式。
+這是一篇短篇自建示範教材，幫助學習者練習從歷史與人類行為中找出不變的模式。
 
 ## 2. Learning Goals
 
@@ -72,4 +72,3 @@ Use the official WordPress YouTube block here if the lesson includes a video.
 ## 12. Sources
 
 Self-created demo text for Jasper Language Lab. No copyrighted full article is reproduced.
-

@@ -125,7 +125,7 @@
     } else if (hour >= 12 && hour < 18) {
       greeting = "Good afternoon";
     }
-    setText(title, `${greeting}, Jasper`);
+    setText(title, greeting);
   }
 
   function renderHomeLessons(lessons) {
