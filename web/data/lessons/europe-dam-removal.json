@@ -15,8 +15,8 @@
   "paragraphs": [
     {
       "id": "p1",
-      "english": "Across Europe, more people are questioning whether old dams still serve a useful purpose. Some barriers once helped factories, timber transport, or small hydropower projects, but many are now obsolete. Removing them can reconnect rivers and give fish, insects, and other species a better chance to move and recover.",
-      "chinese": "在歐洲，越來越多人開始思考老舊水壩是否仍有實際用途。有些屏障曾經服務工廠、木材運輸或小型水力發電，但許多如今已經過時。拆除它們能重新連接河流，讓魚類、昆蟲與其他物種有更好的移動與恢復機會。"
+      "english": "Across Europe, more people are questioning whether old dams still serve a useful purpose. Some barriers once helped factories, timber transport, or small hydropower projects, but many are now obsolete or defunct. Removing them can reconnect rivers and give fish, insects, and other species a better chance to move and recover.",
+      "chinese": "在歐洲，越來越多人開始思考老舊水壩是否仍有實際用途。有些屏障曾經服務工廠、木材運輸或小型水力發電，但許多如今已經過時或停用。拆除它們能重新連接河流，讓魚類、昆蟲與其他物種有更好的移動與恢復機會。"
     },
     {
       "id": "p2",
@@ -25,8 +25,8 @@
     },
     {
       "id": "p3",
-      "english": "The European Union has set a target to restore free-flowing rivers by 2030, so dam removal has gained momentum. Supporters argue that healthier rivers are important as climate pressure on water resources strengthens. However, local communities may worry about flooding, cost, landscape change, or losing a familiar lake.",
-      "chinese": "歐盟設定了到 2030 年恢復自由流動河川的目標，因此拆除水壩的行動逐漸加速。支持者認為，當氣候變遷加劇水資源壓力時，健康的河流更加重要。然而，地方社群可能擔心洪水、成本、景觀改變，或失去熟悉的湖泊。"
+      "english": "The European Union has set a target to restore free-flowing rivers by 2030, so dam removal has gained momentum. Supporters argue that healthier rivers are important as climate pressure on water resources strengthens. However, the decision to tear down a dam can be controversial because local opposition may grow when communities worry about flooding, cost, landscape change, or losing a familiar lake.",
+      "chinese": "歐盟設定了到 2030 年恢復自由流動河川的目標，因此拆除水壩的行動逐漸加速。支持者認為，當氣候變遷加劇水資源壓力時，健康的河流更加重要。然而，拆除水壩的決定可能具有爭議，因為當地方社群擔心洪水、成本、景觀改變，或失去熟悉的湖泊時，地方反對聲浪可能升高。"
     },
     {
       "id": "p4",
@@ -76,6 +76,7 @@
     {
       "id": "v-tear-down-dam",
       "word": "tear down",
+      "aliases": ["tear", "down"],
       "pronunciation": "/ter daʊn/",
       "partOfSpeech": "phrasal verb",
       "chineseDefinition": "拆除",

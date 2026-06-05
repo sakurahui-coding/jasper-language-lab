@@ -120,7 +120,12 @@
     appendSimpleSection(details, "Phrases", (lesson.phrases || []).map((item) => `${item.phrase}: ${item.chineseDefinition} · ${item.example}`));
     appendSimpleSection(details, "Grammar", (lesson.grammar || []).map((item) => `${item.point}: ${item.explanation} Example: ${item.example}`));
     appendSimpleSection(details, "Important Sentences", (lesson.importantSentences || []).map((item) => `${item.sentence} ${item.note}`));
-    appendSimpleSection(details, "Practice", (lesson.practice || []).map((item) => `${item.question}`));
+    appendSimpleSection(details, "Practice", (lesson.practice || []).map((item) => {
+      const options = Array.isArray(item.options) ? ` Options: ${item.options.join(" / ")}` : "";
+      return `${item.question}${options}`;
+    }));
+    appendSimpleSection(details, "Answer Key", (lesson.answerKey || []).map((item) => `${item.question} Answer: ${item.answer}`));
+    appendSourceSection(details, lesson.source);
   }
 
   function appendSimpleSection(parent, title, rows) {
@@ -133,8 +138,35 @@
     parent.append(list);
   }
 
+  function appendSourceSection(parent, source) {
+    if (!source || !source.title) {
+      return;
+    }
+    parent.append(window.JLL.dom.createElement("h3", { text: "Sources" }));
+    const list = window.JLL.dom.createElement("ul");
+    const item = window.JLL.dom.createElement("li");
+    item.append(document.createTextNode(`${source.title}${source.author ? `, ${source.author}` : ""}${source.publishedAt ? `, ${source.publishedAt}` : ""}. `));
+    if (source.url) {
+      item.append(window.JLL.dom.createElement("a", {
+        text: "Open source",
+        attrs: { href: source.url, target: "_blank", rel: "noopener noreferrer" }
+      }));
+    }
+    if (source.note) {
+      item.append(document.createTextNode(` ${source.note}`));
+    }
+    list.append(item);
+    parent.append(list);
+  }
+
   function wordNodes(text) {
-    const vocabMap = new Map(lesson.vocabulary.map((item) => [item.word.toLowerCase(), item]));
+    const vocabMap = new Map();
+    lesson.vocabulary.forEach((item) => {
+      vocabMap.set(item.word.toLowerCase(), item);
+      (item.aliases || []).forEach((alias) => {
+        vocabMap.set(String(alias).toLowerCase(), item);
+      });
+    });
     const fragments = [];
     String(text).split(/(\b[\w'-]+\b)/).forEach((part) => {
       const key = part.toLowerCase().replace(/s$/, "");
