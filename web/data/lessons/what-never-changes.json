@@ -1,0 +1,282 @@
+{
+  "id": "lesson-changing-world-b2",
+  "title": "What Never Changes in a Changing World",
+  "slug": "what-never-changes",
+  "language": "english",
+  "level": "B2",
+  "topic": "History, human behavior, and learning from patterns",
+  "estimatedTime": "12 minutes",
+  "learningGoals": [
+    "理解短文中關於歷史與人類行為的主要觀點。",
+    "學會使用 behaviour、preview、timeless 等 B2 單字。",
+    "練習從句子推論作者想法。",
+    "用自己的英文句子說明一個不容易改變的人類行為。"
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "english": "The world changes faster than any classroom can explain. New tools appear, old plans break, and a single event can cripple a carefully built system. Still, some patterns stay surprisingly steady.",
+      "chinese": "世界變化的速度比任何課堂都更快。新的工具出現，舊的計畫失效，一個事件也可能重創一套精心建立的系統。然而，有些模式卻出奇地穩定。"
+    },
+    {
+      "id": "p2",
+      "english": "People still want safety, status, meaning, and connection. These needs shape markets, families, classrooms, and even geopolitical decisions. A new dialect of technology may appear, but the human questions underneath remain relevant.",
+      "chinese": "人們仍然想要安全感、地位、意義與連結。這些需求塑造市場、家庭、課堂，甚至地緣政治決策。科技可能出現新的語言形式，但底層的人類問題仍然重要。"
+    },
+    {
+      "id": "p3",
+      "english": "But the behaviours that never change are history's most powerful lessons. Because they preview what to expect in the future. When we contemplate the intersection of fear and hope, we can derive wiser choices from timeless patterns.",
+      "chinese": "但是，那些永不改變的行為，是歷史最有力量的課程。因為它們預告了未來可能發生的事。當我們思考恐懼與希望的交會處，就能從不朽的模式中推導出更明智的選擇。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "v-behaviour",
+      "word": "behaviour",
+      "pronunciation": "/bɪˈheɪvjər/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "行為；表現",
+      "englishDefinition": "the way a person or group acts",
+      "example": "Human behaviour often follows familiar patterns.",
+      "sourceSentence": "But the behaviours that never change are history's most powerful lessons.",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["history", "psychology"],
+      "familiarity": "有印象",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-preview",
+      "word": "preview",
+      "pronunciation": "/ˈpriːvjuː/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "預告；預先顯示",
+      "englishDefinition": "to show or suggest what something will be like before it happens",
+      "example": "Past choices can preview future risks.",
+      "sourceSentence": "Because they preview what to expect in the future.",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["reading", "prediction"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-cripple",
+      "word": "cripple",
+      "pronunciation": "/ˈkrɪpəl/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "嚴重削弱；使癱瘓",
+      "englishDefinition": "to damage something badly and make it unable to work well",
+      "example": "A power failure can cripple a city's transport system.",
+      "sourceSentence": "A single event can cripple a carefully built system.",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["systems"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-geopolitical",
+      "word": "geopolitical",
+      "pronunciation": "/ˌdʒiːoʊpəˈlɪtɪkəl/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "地緣政治的",
+      "englishDefinition": "connected with how geography influences politics and international relations",
+      "example": "Energy supply can become a geopolitical issue.",
+      "sourceSentence": "These needs shape markets, families, classrooms, and even geopolitical decisions.",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["politics"],
+      "familiarity": "有印象",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-07"
+    },
+    {
+      "id": "v-dialect",
+      "word": "dialect",
+      "pronunciation": "/ˈdaɪəlekt/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "方言；特定語言形式",
+      "englishDefinition": "a form of a language used by a particular group or area",
+      "example": "Online communities often create their own dialect.",
+      "sourceSentence": "A new dialect of technology may appear.",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["language"],
+      "familiarity": "快記住了",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-09"
+    },
+    {
+      "id": "v-timeless",
+      "word": "timeless",
+      "pronunciation": "/ˈtaɪmləs/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "永恆的；不受時間影響的",
+      "englishDefinition": "not affected by changes in time or fashion",
+      "example": "Kindness is a timeless value.",
+      "sourceSentence": "We can derive wiser choices from timeless patterns.",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["values"],
+      "familiarity": "有印象",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-07"
+    },
+    {
+      "id": "v-contemplate",
+      "word": "contemplate",
+      "pronunciation": "/ˈkɑːntəmpleɪt/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "沉思；仔細考慮",
+      "englishDefinition": "to think carefully about something for a long time",
+      "example": "Students need time to contemplate complex questions.",
+      "sourceSentence": "When we contemplate the intersection of fear and hope...",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["thinking"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-relevant",
+      "word": "relevant",
+      "pronunciation": "/ˈreləvənt/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "相關的；有意義的",
+      "englishDefinition": "closely connected with the subject or situation",
+      "example": "Choose examples that are relevant to the question.",
+      "sourceSentence": "The human questions underneath remain relevant.",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["academic"],
+      "familiarity": "已熟悉",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-12"
+    },
+    {
+      "id": "v-derive",
+      "word": "derive",
+      "pronunciation": "/dɪˈraɪv/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "取得；推導出",
+      "englishDefinition": "to get something from a source or origin",
+      "example": "We derive meaning from repeated experience.",
+      "sourceSentence": "We can derive wiser choices from timeless patterns.",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["academic"],
+      "familiarity": "快記住了",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-09"
+    },
+    {
+      "id": "v-intersection",
+      "word": "intersection",
+      "pronunciation": "/ˌɪntərˈsekʃən/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "交會處；交集",
+      "englishDefinition": "a point where two or more things meet",
+      "example": "The lesson sits at the intersection of history and psychology.",
+      "sourceSentence": "When we contemplate the intersection of fear and hope...",
+      "sourceTitle": "What Never Changes in a Changing World",
+      "sourceLessonId": "lesson-changing-world-b2",
+      "sourceLessonSlug": "what-never-changes",
+      "language": "english",
+      "tags": ["academic"],
+      "familiarity": "有印象",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-07"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "what to expect",
+      "chineseDefinition": "可以預期的事情",
+      "example": "History helps us understand what to expect."
+    },
+    {
+      "phrase": "remain relevant",
+      "chineseDefinition": "仍然有關、仍然重要",
+      "example": "Old questions can remain relevant in a new world."
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Relative clause with that",
+      "explanation": "The clause 'that never change' describes 'behaviours'.",
+      "example": "The habits that shape our choices are not always obvious."
+    }
+  ],
+  "importantSentences": [
+    {
+      "sentence": "But the behaviours that never change are history's most powerful lessons.",
+      "note": "此句使用關係子句說明 behaviours，主詞較長但核心是 behaviours are lessons。"
+    },
+    {
+      "sentence": "Because they preview what to expect in the future.",
+      "note": "preview 在此作動詞，表示歷史模式能預告未來可能發生的事。"
+    }
+  ],
+  "practice": [
+    {
+      "type": "multiple-choice",
+      "question": "What does 'preview' mean in the sample text?",
+      "options": ["to show something before it happens", "to forget a past event", "to copy a complete article", "to make a person quiet"],
+      "answer": "to show something before it happens"
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "The behaviours that never change are history's most powerful ____.",
+      "answer": "lessons"
+    }
+  ],
+  "answerKey": [
+    {
+      "question": "What does 'preview' mean in the sample text?",
+      "answer": "to show something before it happens"
+    },
+    {
+      "question": "The behaviours that never change are history's most powerful ____.",
+      "answer": "lessons"
+    }
+  ],
+  "source": {
+    "type": "self-created demo",
+    "title": "What Never Changes in a Changing World",
+    "note": "Short original demonstration text created for layout and interaction testing. It does not reproduce a copyrighted article."
+  }
+}
+

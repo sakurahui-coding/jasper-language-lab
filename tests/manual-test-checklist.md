@@ -1,0 +1,37 @@
+# Manual Test Checklist
+
+- [ ] Home page loads and quick links work.
+- [ ] GitHub Pages workflow validates required files.
+- [ ] GitHub Pages deployment uses `web/` without moving the project.
+- [ ] Links use relative paths and work under a repository subpath.
+- [ ] Lessons page loads `web/data/lessons.json`.
+- [ ] Lessons page search and filters work.
+- [ ] Featured lessons appear before non-featured lessons.
+- [ ] Reading page loads sample lesson data.
+- [ ] Reading page loads `reading.html?lesson=what-never-changes`.
+- [ ] Invalid lesson slug shows a friendly not-found state.
+- [ ] Lesson JSON load failure shows an error state instead of a blank page.
+- [ ] Vocabulary popover appears when clicking a highlighted word.
+- [ ] Speech buttons fail gracefully if speech is unavailable.
+- [ ] Favorite vocabulary saves to `localStorage`.
+- [ ] Vocabulary page filters by search, language, part of speech, and familiarity.
+- [ ] Delete favorite asks for confirmation.
+- [ ] Export JSON downloads `jasper-language-lab-vocabulary-YYYY-MM-DD.json`.
+- [ ] Valid import shows preview counts.
+- [ ] Invalid JSON import shows a friendly error.
+- [ ] Duplicate import shows duplicate counts.
+- [ ] Replace import asks for confirmation.
+- [ ] Clear all vocabulary asks for two confirmations.
+- [ ] Review page records correct and incorrect answers.
+- [ ] Review scheduling updates `nextReviewDate`.
+- [ ] Progress page shows totals from real localStorage data.
+- [ ] Progress page shows empty states when there is no data.
+- [ ] 14-day review calendar shows 0 on days without activity.
+- [ ] YouTube URL parser accepts standard YouTube links.
+- [ ] Song page does not include full copyrighted lyrics.
+- [ ] WordPress template is readable on mobile.
+- [ ] 375px viewport has no horizontal overflow.
+- [ ] 768px viewport has no horizontal overflow.
+- [ ] 1440px viewport has no horizontal overflow.
+- [ ] Keyboard can open the mobile menu and activate main actions.
+- [ ] Console has no errors.

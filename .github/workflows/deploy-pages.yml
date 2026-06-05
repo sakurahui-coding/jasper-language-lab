@@ -1,0 +1,105 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Validate static site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          set -euo pipefail
+          required_files=(
+            "web/index.html"
+            "web/lessons.html"
+            "web/reading.html"
+            "web/vocabulary.html"
+            "web/review.html"
+            "web/progress.html"
+            "web/assets/css/variables.css"
+            "web/assets/css/base.css"
+            "web/assets/css/components.css"
+            "web/assets/css/responsive.css"
+            "web/assets/js/app.js"
+            "web/assets/js/storage.js"
+            "web/data/lessons.json"
+          )
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "::error file=$file::Required GitHub Pages file is missing."
+              exit 1
+            fi
+          done
+          echo "Required files are present."
+
+      - name: Validate JSON
+        run: |
+          set -euo pipefail
+          find web -name "*.json" -print0 | while IFS= read -r -d '' file; do
+            python3 -m json.tool "$file" > /dev/null || {
+              echo "::error file=$file::Invalid JSON syntax."
+              exit 1
+            }
+          done
+          echo "JSON files are valid."
+
+      - name: Validate JavaScript syntax
+        run: |
+          set -euo pipefail
+          find web/assets/js -name "*.js" -print0 | while IFS= read -r -d '' file; do
+            node --check "$file" || {
+              echo "::error file=$file::Invalid JavaScript syntax."
+              exit 1
+            }
+          done
+          echo "JavaScript files are valid."
+
+      - name: Check relative asset paths
+        run: |
+          set -euo pipefail
+          if grep -R 'href="/\\|src="/' web --include='*.html'; then
+            echo "::error::Use relative paths for GitHub Pages subpath deployment. Found root-relative href or src."
+            exit 1
+          fi
+          echo "No root-relative HTML asset paths found."
+
+  deploy:
+    name: Deploy web folder
+    needs: validate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload web folder
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

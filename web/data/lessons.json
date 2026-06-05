@@ -1,0 +1,19 @@
+[
+  {
+    "id": "lesson-changing-world-b2",
+    "slug": "what-never-changes",
+    "title": "What Never Changes in a Changing World",
+    "language": "english",
+    "level": "B2",
+    "topic": "History and Human Behavior",
+    "estimatedTime": "12 minutes",
+    "shortDescription": "A short self-created reading lesson about timeless human patterns in a changing world.",
+    "coverImage": "",
+    "tags": ["reading", "history", "behaviour", "B2"],
+    "publishedAt": "2026-06-05",
+    "updatedAt": "2026-06-05",
+    "featured": true,
+    "dataFile": "data/lessons/what-never-changes.json"
+  }
+]
+

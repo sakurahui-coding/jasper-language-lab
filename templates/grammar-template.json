@@ -1,0 +1,20 @@
+{
+  "id": "grammar-relative-clause",
+  "title": "Relative clause with that",
+  "language": "english",
+  "level": "B2",
+  "explanation": "Use a relative clause to give more information about a noun.",
+  "examples": [
+    {
+      "sentence": "The behaviours that never change are history's most powerful lessons.",
+      "chineseNote": "that never change 修飾 behaviours。"
+    }
+  ],
+  "practice": [
+    {
+      "question": "The habits ____ shape our choices are not always obvious.",
+      "answer": "that"
+    }
+  ]
+}
+

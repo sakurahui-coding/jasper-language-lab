@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reading | Jasper Language Lab</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/data-schema.js" defer></script>
+    <script src="assets/js/migrations.js" defer></script>
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/speech.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/vocabulary.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="Jasper Language Lab home">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span><span class="brand-title">Jasper Language Lab</span><span class="brand-tagline">Learn. Save. Repeat. Grow.</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="lessons.html">教材</a>
+          <a href="reading.html" aria-current="page">閱讀</a>
+          <a href="vocabulary.html">單字庫</a>
+          <a href="review.html">複習</a>
+          <a href="video.html">影片</a>
+          <a href="song.html">歌曲</a>
+          <a href="progress.html">學習進度</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <section class="lesson-grid">
+        <article class="card article-panel" aria-labelledby="lesson-title">
+          <p class="eyebrow">English Reading</p>
+          <h1 id="lesson-title">Loading lesson...</h1>
+          <div class="lesson-meta" id="lesson-meta"></div>
+          <section aria-labelledby="goals-title">
+            <h2 id="goals-title">學習目標</h2>
+            <ul id="learning-goals"></ul>
+          </section>
+          <div class="reader-controls" aria-label="閱讀控制">
+            <button class="button secondary" type="button" data-action="toggle-translation" aria-label="顯示或隱藏中文翻譯">顯示中文</button>
+            <button class="button secondary" type="button" data-action="decrease-font" aria-label="縮小字體">A-</button>
+            <button class="button secondary" type="button" data-action="increase-font" aria-label="放大字體">A+</button>
+            <button class="button secondary" type="button" data-action="previous-sentence" aria-label="上一句">上一句</button>
+            <button class="button secondary" type="button" data-action="next-sentence" aria-label="下一句">下一句</button>
+            <button class="button" type="button" data-action="speak-sentence" aria-label="朗讀目前句子">單句朗讀</button>
+          </div>
+          <p class="notice" id="speech-warning" hidden>這個瀏覽器目前不支援語音朗讀，但文章與單字功能仍可正常閱讀。</p>
+          <section aria-labelledby="text-title">
+            <h2 id="text-title">Original Text</h2>
+            <div id="article-text"></div>
+          </section>
+          <section class="card-soft" id="lesson-details"></section>
+        </article>
+        <aside class="word-card" id="word-card" hidden aria-live="polite">
+          <h2 id="word-card-word">單字卡</h2>
+          <p class="muted" id="word-card-pronunciation"></p>
+          <p><strong id="word-card-pos"></strong></p>
+          <p id="word-card-zh"></p>
+          <p id="word-card-en" class="muted"></p>
+          <blockquote id="word-card-example"></blockquote>
+          <div class="reader-controls">
+            <button class="button secondary" type="button" data-action="speak-word" aria-label="朗讀單字">發音</button>
+            <button class="button" type="button" data-action="save-word" aria-label="收藏單字">收藏</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

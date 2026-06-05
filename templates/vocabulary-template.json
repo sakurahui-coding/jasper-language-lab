@@ -1,0 +1,18 @@
+{
+  "id": "v-example",
+  "word": "example",
+  "pronunciation": "/ɪɡˈzæmpəl/",
+  "partOfSpeech": "noun",
+  "chineseDefinition": "例子",
+  "englishDefinition": "something that shows what you mean",
+  "example": "This is an example sentence.",
+  "sourceSentence": "This is an example sentence.",
+  "sourceTitle": "Lesson title",
+  "language": "english",
+  "tags": ["demo"],
+  "familiarity": "不認識",
+  "createdAt": "2026-06-05",
+  "lastReviewedAt": "",
+  "nextReviewDate": "2026-06-06"
+}
+

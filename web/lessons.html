@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lessons | Jasper Language Lab</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/data-schema.js" defer></script>
+    <script src="assets/js/migrations.js" defer></script>
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/lessons.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="Jasper Language Lab home">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span><span class="brand-title">Jasper Language Lab</span><span class="brand-tagline">Learn. Save. Repeat. Grow.</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="lessons.html" aria-current="page">教材</a>
+          <a href="reading.html">閱讀</a>
+          <a href="vocabulary.html">單字庫</a>
+          <a href="review.html">複習</a>
+          <a href="video.html">影片</a>
+          <a href="song.html">歌曲</a>
+          <a href="progress.html">學習進度</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Lesson Library</p>
+          <h1>教材索引</h1>
+          <p class="muted">從資料檔載入教材。Featured 教材會置頂，所有連結都使用相對路徑，適合 GitHub Pages 子路徑部署。</p>
+        </div>
+        <div class="card">
+          <strong id="lesson-count">0 lessons</strong>
+          <p class="muted">搜尋、篩選後可直接開啟互動閱讀頁。</p>
+        </div>
+      </section>
+      <section class="card" aria-labelledby="lesson-filters-title">
+        <h2 id="lesson-filters-title">篩選教材</h2>
+        <div class="filters-grid">
+          <div class="field">
+            <label for="lesson-search">搜尋</label>
+            <input class="input" id="lesson-search" type="search" placeholder="title, topic, tag">
+          </div>
+          <div class="field">
+            <label for="lesson-language">語言</label>
+            <select class="select" id="lesson-language">
+              <option value="">全部</option>
+              <option value="english">English</option>
+              <option value="japanese">日本語</option>
+              <option value="german">Deutsch</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="lesson-level">程度</label>
+            <select class="select" id="lesson-level">
+              <option value="">全部</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="lesson-topic">主題</label>
+            <select class="select" id="lesson-topic">
+              <option value="">全部</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="lesson-list-title">
+        <h2 id="lesson-list-title">所有教材</h2>
+        <p class="notice" id="lesson-load-error" hidden>教材索引暫時無法載入。你仍可使用上方導覽開啟其他功能。</p>
+        <div class="lesson-card-list" id="lesson-list"></div>
+      </section>
+    </main>
+  </body>
+</html>
+

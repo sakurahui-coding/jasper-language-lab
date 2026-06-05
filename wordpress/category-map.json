@@ -1,0 +1,19 @@
+{
+  "english": {
+    "category": "English",
+    "suggestedTags": ["reading", "vocabulary", "grammar", "B2"]
+  },
+  "japanese": {
+    "category": "Japanese",
+    "suggestedTags": ["日本語", "vocabulary", "grammar"]
+  },
+  "german": {
+    "category": "German",
+    "suggestedTags": ["Deutsch", "vocabulary", "grammar"]
+  },
+  "school-subjects": {
+    "category": "School Subjects",
+    "suggestedTags": ["math", "science", "biology", "physics"]
+  }
+}
+

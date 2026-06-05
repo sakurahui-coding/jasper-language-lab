@@ -1,0 +1,74 @@
+@media (min-width: 720px) {
+  .brand-tagline {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links,
+  .nav-links.is-open {
+    display: flex;
+    position: static;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+    align-items: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quick-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .lesson-grid,
+  .practice-grid {
+    grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+    align-items: start;
+  }
+
+  .filters-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .lesson-card {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1080px) {
+  .quick-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 380px) {
+  .topbar-inner,
+  .page {
+    width: min(100% - 1rem, var(--max-width));
+  }
+
+  .card,
+  .card-soft,
+  .quick-card {
+    padding: var(--space-4);
+  }
+
+  .button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Songs | Jasper Language Lab</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/data-schema.js" defer></script>
+    <script src="assets/js/migrations.js" defer></script>
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/speech.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="Jasper Language Lab home">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span><span class="brand-title">Jasper Language Lab</span><span class="brand-tagline">Learn. Save. Repeat. Grow.</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="lessons.html">教材</a>
+          <a href="reading.html">閱讀</a>
+          <a href="vocabulary.html">單字庫</a>
+          <a href="review.html">複習</a>
+          <a href="video.html">影片</a>
+          <a href="song.html" aria-current="page">歌曲</a>
+          <a href="progress.html">學習進度</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Song Learning</p>
+          <h1>歌曲學習</h1>
+          <p class="muted">使用官方 YouTube 音樂影片。歌詞或學習句子需由使用者自行貼入合法取得內容。</p>
+        </div>
+        <div class="notice">本頁不內建、不抓取、不重新發布完整受版權保護歌詞。</div>
+      </section>
+      <section class="lesson-grid">
+        <article class="card">
+          <div class="field">
+            <label for="song-url">YouTube 音樂影片 URL</label>
+            <input class="input" id="song-url" type="url" placeholder="https://youtu.be/...">
+          </div>
+          <button class="button" type="button" data-action="load-song" aria-label="載入歌曲影片">載入歌曲</button>
+          <iframe class="embed-frame" id="song-frame" title="YouTube music video player" src="about:blank" allowfullscreen></iframe>
+          <p class="muted" id="song-message" aria-live="polite"></p>
+        </article>
+        <aside class="card">
+          <h2>合法歌詞或學習句子</h2>
+          <label class="sr-only" for="song-lines">貼上合法取得的歌詞片段或學習句子</label>
+          <textarea class="textarea" id="song-lines" placeholder="請只貼合法取得且適合學習使用的短句。"></textarea>
+          <div class="reader-controls">
+            <button class="button secondary" type="button" data-action="parse-song-lines" aria-label="建立歌曲句子清單">建立句子清單</button>
+            <button class="button secondary" type="button" data-action="song-recording" aria-label="開啟跟唱錄音入口">跟唱錄音入口</button>
+          </div>
+          <ul class="sentence-list" id="song-sentence-list"></ul>
+          <h2>聽力填空</h2>
+          <label for="song-blank">把一句歌詞留空，練習聽寫</label>
+          <input class="input" id="song-blank" type="text" placeholder="輸入你聽到的單字或片語">
+          <p class="muted">單句循環目前是 prototype 介面，可先記錄 A/B 秒數。</p>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

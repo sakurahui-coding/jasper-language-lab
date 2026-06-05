@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jasper Language Lab</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/data-schema.js" defer></script>
+    <script src="assets/js/migrations.js" defer></script>
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="index.html" aria-label="Jasper Language Lab home">
+            <span class="brand-mark" aria-hidden="true">J</span>
+            <span>
+              <span class="brand-title">Jasper Language Lab</span>
+              <span class="brand-tagline">Learn. Save. Repeat. Grow.</span>
+            </span>
+          </a>
+          <button class="nav-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+          <nav class="nav-links" aria-label="主要導覽">
+            <a href="index.html" aria-current="page">首頁</a>
+            <a href="lessons.html">教材</a>
+            <a href="reading.html">閱讀</a>
+            <a href="vocabulary.html">單字庫</a>
+            <a href="review.html">複習</a>
+            <a href="video.html">影片</a>
+            <a href="song.html">歌曲</a>
+            <a href="progress.html">學習進度</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="hero" aria-labelledby="home-title">
+          <div>
+            <p class="eyebrow">Personal learning dashboard</p>
+            <h1 id="home-title">Good morning, Jasper</h1>
+            <p class="muted">今天先完成一段閱讀、收藏 3 個單字，再用複習頁把它們變成長期記憶。</p>
+            <div class="pill-row" aria-label="語言切換">
+              <button class="pill" data-language="english" type="button" aria-label="切換英文">English</button>
+              <button class="pill" data-language="japanese" type="button" aria-label="切換日文">日本語</button>
+              <button class="pill" data-language="german" type="button" aria-label="切換德文">Deutsch</button>
+            </div>
+          </div>
+          <div class="card">
+            <h2>今日任務</h2>
+            <p class="muted">B2 Reading: What Never Changes in a Changing World</p>
+            <a class="button" href="reading.html?lesson=what-never-changes">開始閱讀</a>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="今日學習進度">
+          <article class="stat-card">
+            <span class="stat-value" data-stat="todayProgress">0%</span>
+            <strong>今日學習進度</strong>
+            <p class="muted">完成閱讀、單字、複習後會更新。</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value" data-stat="dueWords">0</span>
+            <strong>待複習單字</strong>
+            <p class="muted">依照 nextReviewDate 排入今日清單。</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value" data-stat="streak">1</span>
+            <strong>連續學習天數</strong>
+            <p class="muted">第一版使用本機瀏覽器紀錄。</p>
+          </article>
+        </section>
+
+        <section class="grid" aria-labelledby="recent-title">
+          <div class="card" id="recent-lesson-card">
+            <h2 id="recent-title">最近閱讀文章</h2>
+            <p><strong>What Never Changes in a Changing World</strong></p>
+            <p class="muted">Level B2 · History and human behavior · 12 minutes</p>
+            <a class="button secondary" href="reading.html?lesson=what-never-changes">繼續閱讀</a>
+          </div>
+          <div class="card" id="featured-lessons-card">
+            <h2>推薦教材</h2>
+            <p class="muted">載入教材索引中...</p>
+            <a class="button secondary" href="lessons.html">查看全部教材</a>
+          </div>
+        </section>
+
+        <section aria-labelledby="quick-title">
+          <h2 id="quick-title">快速入口</h2>
+          <div class="quick-grid">
+            <a class="quick-card" href="lessons.html"><strong>Lessons</strong><span>教材索引</span></a>
+            <a class="quick-card" href="reading.html?lesson=what-never-changes"><strong>Reading</strong><span>英文文章閱讀</span></a>
+            <a class="quick-card" href="vocabulary.html"><strong>Vocabulary</strong><span>單字、片語、文法</span></a>
+            <a class="quick-card" href="video.html"><strong>YouTube</strong><span>影片學習與跟讀</span></a>
+            <a class="quick-card" href="song.html"><strong>Songs</strong><span>歌曲聽力練習</span></a>
+            <a class="quick-card" href="review.html"><strong>Review</strong><span>複習與測驗</span></a>
+            <a class="quick-card" href="progress.html"><strong>Progress</strong><span>學習統計</span></a>
+          </div>
+        </section>
+
+        <section id="school-subjects" class="card-soft" aria-labelledby="school-title">
+          <h2 id="school-title">高中課業知識</h2>
+          <p class="muted">第一版保留入口，之後可加入數學、自然、生物、物理等筆記索引。</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

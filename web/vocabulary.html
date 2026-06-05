@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vocabulary | Jasper Language Lab</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/data-schema.js" defer></script>
+    <script src="assets/js/migrations.js" defer></script>
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/speech.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/vocabulary.js" defer></script>
+    <script src="assets/js/backup.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="Jasper Language Lab home">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span><span class="brand-title">Jasper Language Lab</span><span class="brand-tagline">Learn. Save. Repeat. Grow.</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="lessons.html">教材</a>
+          <a href="reading.html">閱讀</a>
+          <a href="vocabulary.html" aria-current="page">單字庫</a>
+          <a href="review.html">複習</a>
+          <a href="video.html">影片</a>
+          <a href="song.html">歌曲</a>
+          <a href="progress.html">學習進度</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Vocabulary Library</p>
+          <h1>單字庫</h1>
+          <p class="muted">使用搜尋與篩選整理收藏單字。第一版資料存在這台瀏覽器的 localStorage。</p>
+        </div>
+        <div class="card">
+          <strong id="vocab-count">0 words</strong>
+          <p class="muted">收藏單字會從閱讀頁、影片頁與歌曲頁加入。</p>
+          <p class="muted" id="last-backup">最後備份：尚未匯出</p>
+        </div>
+      </section>
+      <section class="card" aria-labelledby="backup-title">
+        <h2 id="backup-title">備份與匯入</h2>
+        <p class="muted">匯出檔案只包含 Jasper Language Lab 的單字、複習紀錄與設定，不包含 Cookie、Token、密碼或瀏覽器識別資料。</p>
+        <div class="reader-controls">
+          <button class="button" type="button" id="export-vocabulary" aria-label="匯出單字 JSON">匯出 JSON</button>
+          <label class="button secondary" for="import-vocabulary-file">匯入 JSON</label>
+          <input class="sr-only" id="import-vocabulary-file" type="file" accept="application/json,.json">
+          <button class="button danger" type="button" id="clear-vocabulary" aria-label="清除所有單字資料">清除所有資料</button>
+        </div>
+        <div class="card-soft" id="import-preview" hidden aria-live="polite"></div>
+      </section>
+      <section class="card" aria-labelledby="filters-title">
+        <h2 id="filters-title">篩選</h2>
+        <div class="filters-grid">
+          <div class="field">
+            <label for="search-input">搜尋</label>
+            <input class="input" id="search-input" type="search" placeholder="word, 中文, tag">
+          </div>
+          <div class="field">
+            <label for="language-filter">語言</label>
+            <select class="select" id="language-filter">
+              <option value="">全部</option>
+              <option value="english">English</option>
+              <option value="japanese">日本語</option>
+              <option value="german">Deutsch</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pos-filter">詞性</label>
+            <select class="select" id="pos-filter">
+              <option value="">全部</option>
+              <option value="noun">noun</option>
+              <option value="verb">verb</option>
+              <option value="adjective">adjective</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="familiarity-filter">熟悉程度</label>
+            <select class="select" id="familiarity-filter">
+              <option value="">全部</option>
+              <option value="不認識">不認識</option>
+              <option value="有印象">有印象</option>
+              <option value="快記住了">快記住了</option>
+              <option value="已熟悉">已熟悉</option>
+              <option value="完全掌握">完全掌握</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="list-title">
+        <h2 id="list-title">單字卡清單</h2>
+        <div class="vocab-list" id="vocab-list"></div>
+      </section>
+    </main>
+  </body>
+</html>

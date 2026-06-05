@@ -1,0 +1,24 @@
+{
+  "lessonId": "lesson-changing-world-b2",
+  "items": [
+    {
+      "id": "q-preview-meaning",
+      "type": "multiple-choice",
+      "prompt": "What does preview mean?",
+      "options": [
+        "to show something before it happens",
+        "to delete a plan",
+        "to speak in a dialect",
+        "to ignore a lesson"
+      ],
+      "answer": "to show something before it happens"
+    },
+    {
+      "id": "q-lessons-blank",
+      "type": "fill-in-the-blank",
+      "prompt": "The behaviours that never change are history's most powerful ____.",
+      "answer": "lessons"
+    }
+  ]
+}
+

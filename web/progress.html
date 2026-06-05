@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Progress | Jasper Language Lab</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/data-schema.js" defer></script>
+    <script src="assets/js/migrations.js" defer></script>
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/progress.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="Jasper Language Lab home">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span><span class="brand-title">Jasper Language Lab</span><span class="brand-tagline">Learn. Save. Repeat. Grow.</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="lessons.html">教材</a>
+          <a href="reading.html">閱讀</a>
+          <a href="vocabulary.html">單字庫</a>
+          <a href="review.html">複習</a>
+          <a href="video.html">影片</a>
+          <a href="song.html">歌曲</a>
+          <a href="progress.html" aria-current="page">學習進度</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Learning Progress</p>
+          <h1>學習進度</h1>
+          <p class="muted">統計只讀取目前瀏覽器的 localStorage。沒有資料時會顯示空白狀態並清楚標示。</p>
+        </div>
+        <div class="notice">資料不會自動同步到其他裝置。清除瀏覽器資料可能造成紀錄遺失，建議定期到單字庫匯出 JSON 備份。</div>
+      </section>
+
+      <section class="stats-grid" aria-label="總覽">
+        <article class="stat-card"><span class="stat-value" id="stat-total-words">0</span><strong>收藏單字總數</strong></article>
+        <article class="stat-card"><span class="stat-value" id="stat-due-today">0</span><strong>今日需複習</strong></article>
+        <article class="stat-card"><span class="stat-value" id="stat-mastered">0</span><strong>已掌握單字</strong></article>
+        <article class="stat-card"><span class="stat-value" id="stat-week-reviews">0</span><strong>本週複習次數</strong></article>
+        <article class="stat-card"><span class="stat-value" id="stat-accuracy">0%</span><strong>答對率</strong></article>
+        <article class="stat-card"><span class="stat-value" id="stat-streak">1</span><strong>連續學習天數</strong></article>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>最近學習教材</h2>
+          <div id="recent-lessons"></div>
+        </article>
+        <article class="card">
+          <h2>熟悉程度分布</h2>
+          <div class="bar-list" id="familiarity-bars"></div>
+        </article>
+        <article class="card">
+          <h2>語言分布</h2>
+          <div class="bar-list" id="language-bars"></div>
+        </article>
+        <article class="card">
+          <h2>弱點單字</h2>
+          <div id="weak-words"></div>
+        </article>
+        <article class="card">
+          <h2>14 天複習日曆</h2>
+          <div class="calendar-grid" id="review-calendar"></div>
+        </article>
+        <article class="card">
+          <h2>隱私說明</h2>
+          <ul>
+            <li>資料只存在目前瀏覽器。</li>
+            <li>不會自動同步到其他裝置。</li>
+            <li>清除瀏覽器資料可能造成紀錄遺失。</li>
+            <li>建議定期匯出 JSON 備份。</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+

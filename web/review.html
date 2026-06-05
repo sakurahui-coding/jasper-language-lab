@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review | Jasper Language Lab</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/data-schema.js" defer></script>
+    <script src="assets/js/migrations.js" defer></script>
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/speech.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/quiz.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html" aria-label="Jasper Language Lab home">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span><span class="brand-title">Jasper Language Lab</span><span class="brand-tagline">Learn. Save. Repeat. Grow.</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="lessons.html">教材</a>
+          <a href="reading.html">閱讀</a>
+          <a href="vocabulary.html">單字庫</a>
+          <a href="review.html" aria-current="page">複習</a>
+          <a href="video.html">影片</a>
+          <a href="song.html">歌曲</a>
+          <a href="progress.html">學習進度</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Spaced Review</p>
+          <h1>複習與測驗</h1>
+          <p class="muted">答錯明天再出現；困難 2 天後、普通 4 天後、容易 7 天後、已掌握 14 天後。</p>
+        </div>
+        <div class="card">
+          <strong id="review-progress">0 / 0</strong>
+          <p class="muted" id="review-score">答對 0 · 答錯 0</p>
+        </div>
+      </section>
+      <section class="practice-grid">
+        <article class="card" aria-labelledby="quiz-title">
+          <h2 id="quiz-title">看單字選意思</h2>
+          <p class="muted" id="quiz-mode-label">模式會自動輪替。</p>
+          <div class="card-soft" id="quiz-prompt"></div>
+          <div class="quiz-options" id="quiz-options"></div>
+          <div class="reader-controls">
+            <button class="button secondary" type="button" data-review-rating="wrong" aria-label="標記答錯">答錯</button>
+            <button class="button secondary" type="button" data-review-rating="hard" aria-label="標記困難">困難</button>
+            <button class="button secondary" type="button" data-review-rating="normal" aria-label="標記普通">普通</button>
+            <button class="button secondary" type="button" data-review-rating="easy" aria-label="標記容易">容易</button>
+            <button class="button" type="button" data-review-rating="mastered" aria-label="標記已掌握">已掌握</button>
+          </div>
+          <p class="result-box" id="quiz-result" aria-live="polite">選一個答案開始。</p>
+        </article>
+        <aside class="card">
+          <h2>翻卡模式</h2>
+          <div class="card-soft" id="flash-card" tabindex="0" role="button" aria-label="翻開單字卡">
+            <strong id="flash-front">Click to flip</strong>
+            <p id="flash-back" hidden></p>
+          </div>
+          <div class="review-actions">
+            <button class="button secondary" type="button" id="flip-card" aria-label="翻開或蓋回單字卡">翻卡</button>
+            <button class="button secondary" type="button" id="next-card" aria-label="下一張卡片">下一張</button>
+          </div>
+          <h2>例句填空</h2>
+          <p id="blank-question" class="muted"></p>
+          <label class="sr-only" for="blank-answer">填入答案</label>
+          <input class="input" id="blank-answer" type="text" autocomplete="off">
+          <button class="button secondary" type="button" id="check-blank" aria-label="檢查填空答案">檢查答案</button>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
