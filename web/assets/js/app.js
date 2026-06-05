@@ -100,6 +100,7 @@
     if (!qs("[data-stat='dueWords']")) {
       return;
     }
+    updateGreeting();
     const words = window.JLL.storage.getVocabulary();
     const today = window.JLL.storage.todayIso();
     const due = words.filter((word) => !word.nextReviewDate || word.nextReviewDate <= today).length;
@@ -110,6 +111,21 @@
     setText(qs("[data-stat='streak']"), activity.streak || 1);
     const lessons = await fetchJson("data/lessons.json", []);
     renderHomeLessons(Array.isArray(lessons) ? lessons : []);
+  }
+
+  function updateGreeting(date) {
+    const title = qs("#home-title");
+    if (!title) {
+      return;
+    }
+    const hour = (date || new Date()).getHours();
+    let greeting = "Good evening";
+    if (hour >= 5 && hour < 12) {
+      greeting = "Good morning";
+    } else if (hour >= 12 && hour < 18) {
+      greeting = "Good afternoon";
+    }
+    setText(title, `${greeting}, Jasper`);
   }
 
   function renderHomeLessons(lessons) {
@@ -241,5 +257,6 @@
   window.JLL = window.JLL || {};
   window.JLL.dom = { createElement, qs, qsa, setText };
   window.JLL.data = { fetchJson };
+  window.JLL.home = { updateGreeting };
   window.JLL.youtube = { getYouTubeId, parseTimedLines };
 })();
