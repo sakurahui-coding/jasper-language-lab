@@ -1,0 +1,460 @@
+{
+  "id": "lesson-europe-dam-removal-b2",
+  "title": "Why Europe Wants to Tear Down Thousands of Its Dams",
+  "slug": "europe-dam-removal",
+  "language": "english",
+  "level": "B2",
+  "topic": "Environment, river restoration, obsolete dams, and hydropower",
+  "estimatedTime": "18 minutes",
+  "learningGoals": [
+    "能用標題預測文章主題：dam removal、river health、ecosystem restoration。",
+    "能抓出文章架構：問題、人物例子、政策背景、生態原因、反方疑慮、結論。",
+    "能練習學測常見題型：主旨、細節、字義、推論與作者態度。",
+    "能用 5-6 句英文摘要環境議題文章，而不是逐句翻譯。"
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "english": "Across Europe, more people are questioning whether old dams still serve a useful purpose. Some barriers once helped factories, timber transport, or small hydropower projects, but many are now obsolete. Removing them can reconnect rivers and give fish, insects, and other species a better chance to move and recover.",
+      "chinese": "在歐洲，越來越多人開始思考老舊水壩是否仍有實際用途。有些屏障曾經服務工廠、木材運輸或小型水力發電，但許多如今已經過時。拆除它們能重新連接河流，讓魚類、昆蟲與其他物種有更好的移動與恢復機會。"
+    },
+    {
+      "id": "p2",
+      "english": "The issue is not simply about destroying infrastructure. It is about deciding which structures are still necessary and which ones create more disruption than benefit. Dams can change river flow, block animal migration, and create stagnant water that is more easily polluted.",
+      "chinese": "這個議題不只是破壞基礎建設，而是判斷哪些結構仍然必要，哪些造成的干擾大於好處。水壩可能改變河流流速、阻擋動物遷徙，並形成較容易受污染的停滯水域。"
+    },
+    {
+      "id": "p3",
+      "english": "The European Union has set a target to restore free-flowing rivers by 2030, so dam removal has gained momentum. Supporters argue that healthier rivers are important as climate pressure on water resources strengthens. However, local communities may worry about flooding, cost, landscape change, or losing a familiar lake.",
+      "chinese": "歐盟設定了到 2030 年恢復自由流動河川的目標，因此拆除水壩的行動逐漸加速。支持者認為，當氣候變遷加劇水資源壓力時，健康的河流更加重要。然而，地方社群可能擔心洪水、成本、景觀改變，或失去熟悉的湖泊。"
+    },
+    {
+      "id": "p4",
+      "english": "The article presents dam removal as a balance, not a simple victory. Europe still needs energy, and hydropower can support fossil-fuel-free electricity. The central question is how to restore river ecosystems while keeping enough sustainable power for society.",
+      "chinese": "這篇文章把拆除水壩呈現為一種平衡，而不是單純的勝利。歐洲仍然需要能源，而水力發電能支持非化石燃料電力。核心問題是如何在恢復河川生態的同時，保留社會所需的永續能源。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "v-resource-dam",
+      "word": "resource",
+      "pronunciation": "/ˈriːsɔːrs/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "資源",
+      "englishDefinition": "something useful that can be managed or used",
+      "example": "Water is an important natural resource.",
+      "sourceSentence": "Climate pressure on water resources is strengthening.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["environment", "water"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-strengthen-dam",
+      "word": "strengthen",
+      "pronunciation": "/ˈstreŋθən/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "加強；加劇",
+      "englishDefinition": "to become stronger or make something stronger",
+      "example": "The pressure on water resources may strengthen as climate changes.",
+      "sourceSentence": "Climate pressure on water resources strengthens.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["cause-effect"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-tear-down-dam",
+      "word": "tear down",
+      "pronunciation": "/ter daʊn/",
+      "partOfSpeech": "phrasal verb",
+      "chineseDefinition": "拆除",
+      "englishDefinition": "to pull down or remove a structure",
+      "example": "Workers may tear down old dams that no longer serve a purpose.",
+      "sourceSentence": "Europe wants to tear down thousands of its dams.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["phrasal verb"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-defunct-dam",
+      "word": "defunct",
+      "pronunciation": "/dɪˈfʌŋkt/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "停用的；廢棄的",
+      "englishDefinition": "no longer existing, active, or useful",
+      "example": "A defunct dam may be a good candidate for removal.",
+      "sourceSentence": "A defunct dam had been inactive for decades.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["context clues"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-barrier-dam",
+      "word": "barrier",
+      "pronunciation": "/ˈbæriər/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "障礙物；屏障",
+      "englishDefinition": "something that blocks movement or progress",
+      "example": "Old barriers can stop fish from moving along a river.",
+      "sourceSentence": "Dams and other barriers can block waterways.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["environment"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-restore-dam",
+      "word": "restore",
+      "pronunciation": "/rɪˈstɔːr/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "恢復；修復",
+      "englishDefinition": "to bring something back to a healthier or former state",
+      "example": "The project aims to restore river ecosystems.",
+      "sourceSentence": "The goal is to restore free-flowing rivers.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["restoration"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-ecosystem-dam",
+      "word": "ecosystem",
+      "pronunciation": "/ˈiːkoʊsɪstəm/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "生態系",
+      "englishDefinition": "all living things in an area and how they interact with their environment",
+      "example": "Healthy river ecosystems support many species.",
+      "sourceSentence": "Dam removal can help restore ecosystems.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["science"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-disruption-dam",
+      "word": "disruption",
+      "pronunciation": "/dɪsˈrʌpʃən/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "破壞；干擾",
+      "englishDefinition": "a disturbance that interrupts the normal state of something",
+      "example": "Dams may cause ecosystem disruption.",
+      "sourceSentence": "The policy addresses ecosystem disruption caused by dams.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["academic"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-sustainable-dam",
+      "word": "sustainable",
+      "pronunciation": "/səˈsteɪnəbəl/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "永續的",
+      "englishDefinition": "able to continue without causing serious damage",
+      "example": "Europe needs sustainable ways to manage rivers and energy.",
+      "sourceSentence": "Rivers need to be managed more sustainably.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["environment"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-stagnant-dam",
+      "word": "stagnant",
+      "pronunciation": "/ˈstæɡnənt/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "停滯的；不流動的",
+      "englishDefinition": "not flowing or moving",
+      "example": "Stagnant water can be easily polluted.",
+      "sourceSentence": "Dams can create stagnant water.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["context clues"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-obsolete-dam",
+      "word": "obsolete",
+      "pronunciation": "/ˌɑːbsəˈliːt/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "過時的；淘汰的",
+      "englishDefinition": "no longer useful because something newer or better exists",
+      "example": "Some old dams are obsolete and no longer useful.",
+      "sourceSentence": "At least some river barriers are obsolete.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["context clues"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-controversial-dam",
+      "word": "controversial",
+      "pronunciation": "/ˌkɑːntrəˈvɜːrʃəl/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "有爭議的",
+      "englishDefinition": "causing disagreement or argument",
+      "example": "Dam removal can be controversial in local communities.",
+      "sourceSentence": "Dam removal can be controversial because people worry about flooding and cost.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["attitude"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-opposition-dam",
+      "word": "opposition",
+      "pronunciation": "/ˌɑːpəˈzɪʃən/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "反對",
+      "englishDefinition": "disagreement with or resistance to an idea or plan",
+      "example": "Local opposition may slow down a restoration project.",
+      "sourceSentence": "Some projects face local opposition.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["society"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    },
+    {
+      "id": "v-recover-dam",
+      "word": "recover",
+      "pronunciation": "/rɪˈkʌvər/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "恢復",
+      "englishDefinition": "to return to a normal or healthy condition",
+      "example": "After a barrier is removed, nature may begin to recover.",
+      "sourceSentence": "Supporters believe nature can recover after removal.",
+      "sourceTitle": "Why Europe Wants to Tear Down Thousands of Its Dams",
+      "sourceLessonId": "lesson-europe-dam-removal-b2",
+      "sourceLessonSlug": "europe-dam-removal",
+      "language": "english",
+      "tags": ["restoration"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-05",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-06"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "tear down old dams",
+      "chineseDefinition": "拆除老舊水壩",
+      "example": "Some communities tear down old dams to restore river health."
+    },
+    {
+      "phrase": "free-flowing rivers",
+      "chineseDefinition": "自由流動的河流",
+      "example": "The policy supports more free-flowing rivers by 2030."
+    },
+    {
+      "phrase": "local opposition",
+      "chineseDefinition": "地方反對聲浪",
+      "example": "Local opposition can make restoration projects more difficult."
+    },
+    {
+      "phrase": "balance energy and ecology",
+      "chineseDefinition": "平衡能源與生態",
+      "example": "Europe must balance energy and ecology when deciding which dams to remove."
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Purpose phrase: to + verb",
+      "explanation": "Use 'to + verb' to explain the purpose of an action.",
+      "example": "Europe removes old dams to restore river ecosystems."
+    },
+    {
+      "point": "Cause and contrast signals",
+      "explanation": "Words such as because, driven by, but, however, and although help readers identify reasons and turns in the argument.",
+      "example": "Dam removal helps nature, but some people worry about cost."
+    },
+    {
+      "point": "Passive voice for policy and infrastructure",
+      "explanation": "Environmental reports often use passive voice when the actor is less important than the action.",
+      "example": "More than 500 barriers were removed in one year."
+    }
+  ],
+  "importantSentences": [
+    {
+      "sentence": "Some old dams are obsolete, so removing them can restore river health.",
+      "note": "主旨句：obsolete 說明拆除原因，restore 說明目的。"
+    },
+    {
+      "sentence": "Dams can block animal migration and create stagnant water.",
+      "note": "細節題常考：block migration / create stagnant water。"
+    },
+    {
+      "sentence": "Dam removal is supportive in tone, but the article also recognizes cost, flooding fears, and local opposition.",
+      "note": "作者態度題：supportive but aware of challenges。"
+    }
+  ],
+  "practice": [
+    {
+      "type": "multiple-choice",
+      "question": "What is the main idea of the lesson?",
+      "options": [
+        "Europe is building more dams for hydropower.",
+        "Europe is removing old dams to restore river ecosystems.",
+        "Norway is banning all fishing activities.",
+        "Old dams are becoming tourist attractions."
+      ],
+      "answer": "Europe is removing old dams to restore river ecosystems."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Why can a defunct dam be a good candidate for removal?",
+      "options": [
+        "It is new and powerful.",
+        "It has been inactive and no longer useful.",
+        "It is a natural waterfall.",
+        "It always prevents flooding."
+      ],
+      "answer": "It has been inactive and no longer useful."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which problem caused by dams is mentioned?",
+      "options": [
+        "They make rivers too clean.",
+        "They stop all climate change.",
+        "They block animals from moving along rivers.",
+        "They make fish migrate too quickly."
+      ],
+      "answer": "They block animals from moving along rivers."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The word defunct is closest in meaning to ________.",
+      "options": [
+        "no longer active",
+        "newly built",
+        "highly dangerous",
+        "naturally beautiful"
+      ],
+      "answer": "no longer active"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What can be inferred from local opposition to dam removal?",
+      "options": [
+        "People may fear change even when nature can benefit.",
+        "All people in Europe oppose dam removal.",
+        "Dams never affect ecosystems.",
+        "Removing dams is always free."
+      ],
+      "answer": "People may fear change even when nature can benefit."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The author's attitude toward dam removal is best described as ________.",
+      "options": [
+        "supportive but aware of challenges",
+        "completely negative",
+        "uninterested",
+        "humorous and careless"
+      ],
+      "answer": "supportive but aware of challenges"
+    }
+  ],
+  "answerKey": [
+    {
+      "question": "What is the main idea of the lesson?",
+      "answer": "Europe is removing old dams to restore river ecosystems."
+    },
+    {
+      "question": "Why can a defunct dam be a good candidate for removal?",
+      "answer": "It has been inactive and no longer useful."
+    },
+    {
+      "question": "Which problem caused by dams is mentioned?",
+      "answer": "They block animals from moving along rivers."
+    },
+    {
+      "question": "The word defunct is closest in meaning to ________.",
+      "answer": "no longer active"
+    },
+    {
+      "question": "What can be inferred from local opposition to dam removal?",
+      "answer": "People may fear change even when nature can benefit."
+    },
+    {
+      "question": "The author's attitude toward dam removal is best described as ________.",
+      "answer": "supportive but aware of challenges"
+    }
+  ],
+  "source": {
+    "type": "article plus user-provided study handout",
+    "title": "Why Europe wants to tear down thousands of its dams",
+    "author": "Rebecca Dzombak",
+    "publishedAt": "2026-05-21",
+    "url": "https://www.nationalgeographic.com/environment/article/europe-dam-removal-rivers-hydropower",
+    "note": "Interactive public lesson uses a transformed summary, vocabulary, short learning sentences, and practice. It does not reproduce the full National Geographic article."
+  }
+}

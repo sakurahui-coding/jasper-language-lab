@@ -14,6 +14,21 @@
     "updatedAt": "2026-06-05",
     "featured": true,
     "dataFile": "data/lessons/what-never-changes.json"
+  },
+  {
+    "id": "lesson-europe-dam-removal-b2",
+    "slug": "europe-dam-removal",
+    "title": "Why Europe Wants to Tear Down Thousands of Its Dams",
+    "language": "english",
+    "level": "B2",
+    "topic": "Environment and River Restoration",
+    "estimatedTime": "18 minutes",
+    "shortDescription": "A GSAT-style reading unit about Europe removing obsolete dams to restore river ecosystems while balancing hydropower needs.",
+    "coverImage": "",
+    "tags": ["reading", "environment", "dams", "ecosystem", "GSAT", "B2"],
+    "publishedAt": "2026-06-05",
+    "updatedAt": "2026-06-05",
+    "featured": true,
+    "dataFile": "data/lessons/europe-dam-removal.json"
   }
 ]
-
