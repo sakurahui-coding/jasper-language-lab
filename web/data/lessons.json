@@ -30,5 +30,37 @@
     "updatedAt": "2026-06-05",
     "featured": true,
     "dataFile": "data/lessons/europe-dam-removal.json"
+  },
+  {
+    "id": "lesson-hanging-by-a-thread-b2",
+    "slug": "hanging-by-a-thread",
+    "title": "Hanging by a Thread",
+    "language": "english",
+    "level": "B2",
+    "topic": "Risk, Luck, and Turning Points",
+    "estimatedTime": "16 minutes",
+    "shortDescription": "A transformed reading unit about how small events, risk, and timing can shape a life.",
+    "coverImage": "",
+    "tags": ["reading", "risk", "history", "decision-making", "B2"],
+    "publishedAt": "2026-06-09",
+    "updatedAt": "2026-06-09",
+    "featured": true,
+    "dataFile": "data/lessons/hanging-by-a-thread.json"
+  },
+  {
+    "id": "lesson-little-laws-of-life-b2",
+    "slug": "little-laws-of-life",
+    "title": "The Little Laws of Life",
+    "language": "english",
+    "level": "B2",
+    "topic": "Human Behavior and Timeless Patterns",
+    "estimatedTime": "16 minutes",
+    "shortDescription": "A transformed reading unit about why some human patterns remain the same even when the world changes.",
+    "coverImage": "",
+    "tags": ["reading", "psychology", "behavior", "business", "B2"],
+    "publishedAt": "2026-06-09",
+    "updatedAt": "2026-06-09",
+    "featured": true,
+    "dataFile": "data/lessons/little-laws-of-life.json"
   }
 ]

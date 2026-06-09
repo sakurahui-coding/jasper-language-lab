@@ -1,0 +1,485 @@
+{
+  "id": "lesson-little-laws-of-life-b2",
+  "title": "The Little Laws of Life",
+  "slug": "little-laws-of-life",
+  "language": "english",
+  "level": "B2",
+  "topic": "Human behavior, timeless patterns, and decision-making",
+  "estimatedTime": "16 minutes",
+  "learningGoals": [
+    "能理解 what changes 與 what never changes 的對比架構。",
+    "能辨認作者如何用例子引出抽象主題：人性、行為、長期判斷。",
+    "能學會心理、商業、歷史相關單字，並應用在摘要與推論題。",
+    "能練習 rhetorical question、contrast、relative clause 與 abstract noun 的閱讀判斷。"
+  ],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "english": "A lunch conversation about Warren Buffett and Snickers introduces the lesson. Even after a crisis crippled the global economy, one ordinary candy bar stayed bestselling. The example feels small, but it points to something timeless.",
+      "chinese": "一場關於華倫・巴菲特與 Snickers 巧克力棒的午餐談話，引出了這個單元。即使一場危機重創全球經濟，一個普通的巧克力棒仍然維持暢銷。這個例子看似很小，卻指向某種不變的事物。"
+    },
+    {
+      "id": "p2",
+      "english": "Technology, medicine, geopolitics, and dialects can change quickly. Yet greed, jealousy, overconfidence, shortsightedness, and the desire for certainty keep appearing in human behavior. That pattern is relatable because it is universal.",
+      "chinese": "科技、醫學、地緣政治與語言方言都可能快速改變。然而，貪婪、嫉妒、過度自信、短視，以及對確定性的渴望，仍然不斷出現在人類行為中。這個模式讓人有共鳴，因為它具有普遍性。"
+    },
+    {
+      "id": "p3",
+      "english": "The lesson asks readers not only to predict what will change, but also to grasp what will remain the same. Stable truths are easy to overlook because change captures attention. A good thinker studies both movement and stillness.",
+      "chinese": "這個單元提醒讀者，不只要預測什麼會改變，也要理解什麼會保持不變。穩定的真理很容易被忽略，因為變化更能吸引注意力。好的思考者會同時研究變動與不變。"
+    },
+    {
+      "id": "p4",
+      "english": "The chapter works like a preview of little laws about life. These laws do not promise certainty, but they help us contemplate risk, attachment, luck, and behavior. When a pattern appears in parallel across time, it may deserve our attention.",
+      "chinese": "這一章像是人生小法則的預告。這些法則不保證確定性，但能幫助我們思考風險、依戀、運氣與行為。當某個模式在不同時代平行出現時，它可能值得我們注意。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "v-crippled-laws",
+      "word": "crippled",
+      "pronunciation": "/ˈkrɪpəld/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "嚴重削弱；重創",
+      "englishDefinition": "damaged something so badly that it could not work normally",
+      "example": "The crisis crippled the economy.",
+      "sourceSentence": "A crisis crippled the global economy.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["business", "context clues"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-bestselling-laws",
+      "word": "bestselling",
+      "pronunciation": "/ˌbestˈselɪŋ/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "暢銷的",
+      "englishDefinition": "selling in very large numbers",
+      "example": "The candy bar stayed bestselling.",
+      "sourceSentence": "One ordinary candy bar stayed bestselling.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["business"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-timeless-laws",
+      "word": "timeless",
+      "pronunciation": "/ˈtaɪmləs/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "不受時間影響的；永恆的",
+      "englishDefinition": "not changing or becoming less important over time",
+      "example": "Human behavior may reveal timeless patterns.",
+      "sourceSentence": "The example points to something timeless.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["theme"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-geopolitics-laws",
+      "word": "geopolitics",
+      "pronunciation": "/ˌdʒiːoʊˈpɑːlətɪks/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "地緣政治",
+      "englishDefinition": "how geography and politics affect countries and power",
+      "example": "Geopolitics can change quickly.",
+      "sourceSentence": "Technology, medicine, geopolitics, and dialects can change quickly.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["academic"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-dialect-laws",
+      "word": "dialect",
+      "aliases": ["dialects"],
+      "pronunciation": "/ˈdaɪəlekt/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "方言",
+      "englishDefinition": "a form of a language used in a particular area or by a particular group",
+      "example": "Dialects may shift as communities change.",
+      "sourceSentence": "Dialects can change quickly.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["language"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-greed-laws",
+      "word": "greed",
+      "pronunciation": "/ɡriːd/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "貪婪",
+      "englishDefinition": "a strong desire for more money, power, or things than needed",
+      "example": "Greed can influence decisions.",
+      "sourceSentence": "Greed keeps appearing in human behavior.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["psychology"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-jealousy-laws",
+      "word": "jealousy",
+      "pronunciation": "/ˈdʒeləsi/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "嫉妒",
+      "englishDefinition": "an unhappy feeling caused by wanting what someone else has",
+      "example": "Jealousy is one pattern that does not disappear.",
+      "sourceSentence": "Jealousy keeps appearing in human behavior.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["psychology"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-overconfidence-laws",
+      "word": "overconfidence",
+      "pronunciation": "/ˌoʊvərˈkɑːnfɪdəns/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "過度自信",
+      "englishDefinition": "too much confidence in one's own ability or judgment",
+      "example": "Overconfidence can make people ignore risk.",
+      "sourceSentence": "Overconfidence keeps appearing in human behavior.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["psychology", "risk"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-shortsightedness-laws",
+      "word": "shortsightedness",
+      "pronunciation": "/ˌʃɔːrtˈsaɪtɪdnəs/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "短視；缺乏遠見",
+      "englishDefinition": "failure to think about future results",
+      "example": "Shortsightedness can lead to poor choices.",
+      "sourceSentence": "Shortsightedness keeps appearing in human behavior.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["decision-making"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-certainty-laws",
+      "word": "certainty",
+      "pronunciation": "/ˈsɜːrtnti/",
+      "partOfSpeech": "noun",
+      "chineseDefinition": "確定性；把握",
+      "englishDefinition": "the state of being completely sure",
+      "example": "People often want certainty in an uncertain world.",
+      "sourceSentence": "The desire for certainty keeps appearing in human behavior.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["abstract noun"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-relatable-laws",
+      "word": "relatable",
+      "pronunciation": "/rɪˈleɪtəbəl/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "能引起共鳴的",
+      "englishDefinition": "easy to understand because it feels connected to one's own experience",
+      "example": "The pattern is relatable because everyone has seen it.",
+      "sourceSentence": "That pattern is relatable because it is universal.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["tone"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-universal-laws",
+      "word": "universal",
+      "pronunciation": "/ˌjuːnɪˈvɜːrsəl/",
+      "partOfSpeech": "adjective",
+      "chineseDefinition": "普遍的；全體適用的",
+      "englishDefinition": "true or existing everywhere",
+      "example": "A universal pattern can appear across many cultures.",
+      "sourceSentence": "The pattern is universal.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["theme"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-grasp-laws",
+      "word": "grasp",
+      "pronunciation": "/ɡræsp/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "理解；掌握",
+      "englishDefinition": "to understand something",
+      "example": "Readers should grasp what remains the same.",
+      "sourceSentence": "Readers should grasp what will remain the same.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["reading skill"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-overlook-laws",
+      "word": "overlook",
+      "pronunciation": "/ˌoʊvərˈlʊk/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "忽略",
+      "englishDefinition": "to fail to notice something",
+      "example": "Stable truths are easy to overlook.",
+      "sourceSentence": "Stable truths are easy to overlook.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["reading skill"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    },
+    {
+      "id": "v-contemplate-laws",
+      "word": "contemplate",
+      "pronunciation": "/ˈkɑːntəmpleɪt/",
+      "partOfSpeech": "verb",
+      "chineseDefinition": "沉思；仔細思考",
+      "englishDefinition": "to think carefully about something",
+      "example": "The chapter helps readers contemplate risk.",
+      "sourceSentence": "The laws help us contemplate risk, attachment, luck, and behavior.",
+      "sourceTitle": "The Little Laws of Life",
+      "sourceLessonId": "lesson-little-laws-of-life-b2",
+      "sourceLessonSlug": "little-laws-of-life",
+      "language": "english",
+      "tags": ["academic"],
+      "familiarity": "不認識",
+      "createdAt": "2026-06-09",
+      "lastReviewedAt": "",
+      "nextReviewDate": "2026-06-10"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "bounce back",
+      "chineseDefinition": "復原；恢復",
+      "example": "A company may bounce back after a difficult year."
+    },
+    {
+      "phrase": "same as ever",
+      "chineseDefinition": "一如往常；始終如一",
+      "example": "Human behavior can be same as ever even when tools change."
+    },
+    {
+      "phrase": "what never changes",
+      "chineseDefinition": "不會改變的事物",
+      "example": "The lesson focuses on what never changes."
+    },
+    {
+      "phrase": "capture attention",
+      "chineseDefinition": "吸引注意",
+      "example": "Change captures attention more easily than stability."
+    },
+    {
+      "phrase": "make sense of",
+      "chineseDefinition": "理解；整理出意義",
+      "example": "Timeless patterns help us make sense of the future."
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Rhetorical question",
+      "explanation": "A question can introduce a thinking frame instead of asking for a simple answer.",
+      "example": "What will change, and what will remain the same?"
+    },
+    {
+      "point": "Contrast: change vs. stability",
+      "explanation": "Words such as even after, yet, but, and not only help compare changing details with stable patterns.",
+      "example": "Technology changes quickly, yet human behavior often repeats."
+    },
+    {
+      "point": "What-clause as a noun phrase",
+      "explanation": "What + verb can act like a noun phrase in abstract discussion.",
+      "example": "Readers should grasp what will remain the same."
+    }
+  ],
+  "importantSentences": [
+    {
+      "sentence": "Change captures attention, but stable behavior teaches prediction.",
+      "note": "對比句：change 與 stable behavior 是全文核心。"
+    },
+    {
+      "sentence": "The better question is not only what will change, but what will not change.",
+      "note": "文法重點：not only...but... 與 what-clause。"
+    },
+    {
+      "sentence": "When a pattern appears in parallel across time, it may deserve our attention.",
+      "note": "推論句：跨時代重複出現的模式，就是作者要讀者重視的線索。"
+    }
+  ],
+  "practice": [
+    {
+      "type": "multiple-choice",
+      "question": "What is the main idea of the lesson?",
+      "options": [
+        "Candy bars are the most important part of history.",
+        "Some human patterns remain stable even as the world changes.",
+        "Technology has stopped changing.",
+        "People should ignore business examples."
+      ],
+      "answer": "Some human patterns remain stable even as the world changes."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Why does the lesson mention Snickers?",
+      "options": [
+        "To show a small example of lasting consumer behavior.",
+        "To compare different kinds of chocolate.",
+        "To explain how candy is made.",
+        "To argue that all companies are the same."
+      ],
+      "answer": "To show a small example of lasting consumer behavior."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which pair best shows the lesson's main contrast?",
+      "options": [
+        "medicine and candy",
+        "change and stability",
+        "language and lunch",
+        "economy and weather"
+      ],
+      "answer": "change and stability"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The word overlook is closest in meaning to ________.",
+      "options": [
+        "fail to notice",
+        "study carefully",
+        "sell quickly",
+        "change suddenly"
+      ],
+      "answer": "fail to notice"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What can be inferred about stable truths?",
+      "options": [
+        "They may be less exciting than change, but they are useful for judgment.",
+        "They disappear whenever technology improves.",
+        "They only matter in business.",
+        "They are easy to predict perfectly."
+      ],
+      "answer": "They may be less exciting than change, but they are useful for judgment."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The author's attitude is best described as ________.",
+      "options": [
+        "reflective and practical",
+        "angry and sarcastic",
+        "careless and confused",
+        "technical and emotionless"
+      ],
+      "answer": "reflective and practical"
+    }
+  ],
+  "answerKey": [
+    {
+      "question": "What is the main idea of the lesson?",
+      "answer": "Some human patterns remain stable even as the world changes."
+    },
+    {
+      "question": "Why does the lesson mention Snickers?",
+      "answer": "To show a small example of lasting consumer behavior."
+    },
+    {
+      "question": "Which pair best shows the lesson's main contrast?",
+      "answer": "change and stability"
+    },
+    {
+      "question": "The word overlook is closest in meaning to ________.",
+      "answer": "fail to notice"
+    },
+    {
+      "question": "What can be inferred about stable truths?",
+      "answer": "They may be less exciting than change, but they are useful for judgment."
+    },
+    {
+      "question": "The author's attitude is best described as ________.",
+      "answer": "reflective and practical"
+    }
+  ],
+  "source": {
+    "type": "user-provided HTML excerpt transformed into a public lesson",
+    "title": "Same as Ever: A Guide to What Never Changes",
+    "author": "Morgan Housel",
+    "publishedAt": "2023-11-07",
+    "url": "https://www.penguinrandomhouse.com/books/672339/same-as-ever-by-morgan-housel/9780593332702",
+    "note": "This public interactive lesson uses transformed summaries, vocabulary, short teaching sentences, and practice. It does not reproduce the full user-provided chapter text."
+  }
+}
