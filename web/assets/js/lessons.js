@@ -73,11 +73,12 @@
       tags
     );
     const actions = window.JLL.dom.createElement("div", { className: "lesson-card-actions" });
+    const lessonUrl = lesson.externalUrl || `reading.html?lesson=${encodeURIComponent(lesson.slug)}`;
     actions.append(
       window.JLL.dom.createElement("a", {
         className: "button",
-        text: "開始互動閱讀",
-        attrs: { href: `reading.html?lesson=${encodeURIComponent(lesson.slug)}` }
+        text: lesson.externalUrl ? "開啟完整互動版" : "開始互動閱讀",
+        attrs: { href: lessonUrl }
       })
     );
     card.append(body, actions);
@@ -104,4 +105,3 @@
   window.JLL = window.JLL || {};
   window.JLL.lessons = { createLessonCard, loadLessons };
 })();
-

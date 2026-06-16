@@ -258,6 +258,29 @@
   font-weight: 800;
 }
 
+.lesson-detail-list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.detail-highlight {
+  font-weight: 900;
+}
+
+.phrase-highlight {
+  color: var(--color-primary-dark);
+}
+
+.grammar-highlight {
+  color: var(--color-accent-dark);
+}
+
+.detail-example {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--color-muted);
+}
+
 .word-card {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);

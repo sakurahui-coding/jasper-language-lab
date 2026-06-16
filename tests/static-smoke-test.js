@@ -39,11 +39,18 @@ required.forEach((file) => assert(fs.existsSync(path.join(root, file)), `Missing
 const lessons = parseJson("web/data/lessons.json");
 assert(Array.isArray(lessons) && lessons.length > 0, "lessons.json must contain at least one lesson.");
 lessons.forEach((lesson) => {
-  ["id", "slug", "title", "language", "level", "topic", "estimatedTime", "shortDescription", "tags", "publishedAt", "updatedAt", "dataFile"].forEach((field) => {
+  ["id", "slug", "title", "language", "level", "topic", "estimatedTime", "shortDescription", "tags", "publishedAt", "updatedAt"].forEach((field) => {
     assert(Object.prototype.hasOwnProperty.call(lesson, field), `Lesson ${lesson.slug || lesson.id} missing ${field}`);
   });
-  assert(!lesson.dataFile.startsWith("/"), `Lesson ${lesson.slug} dataFile must be relative.`);
-  parseJson(path.join("web", lesson.dataFile));
+  assert(lesson.dataFile || lesson.externalUrl, `Lesson ${lesson.slug} must have dataFile or externalUrl.`);
+  if (lesson.dataFile) {
+    assert(!lesson.dataFile.startsWith("/"), `Lesson ${lesson.slug} dataFile must be relative.`);
+    parseJson(path.join("web", lesson.dataFile));
+  }
+  if (lesson.externalUrl) {
+    assert(!lesson.externalUrl.startsWith("/"), `Lesson ${lesson.slug} externalUrl must be relative.`);
+    assert(fs.existsSync(path.join(root, "web", lesson.externalUrl)), `Lesson ${lesson.slug} externalUrl file is missing.`);
+  }
 });
 
 fs.readdirSync(path.join(root, "web")).filter((file) => file.endsWith(".html")).forEach((file) => {
@@ -53,4 +60,3 @@ fs.readdirSync(path.join(root, "web")).filter((file) => file.endsWith(".html")).
 });
 
 console.log("Static smoke test OK");
-

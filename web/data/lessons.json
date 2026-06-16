@@ -62,5 +62,21 @@
     "updatedAt": "2026-06-09",
     "featured": true,
     "dataFile": "data/lessons/little-laws-of-life.json"
+  },
+  {
+    "id": "lesson-expectations-and-reality-full",
+    "slug": "expectations-and-reality",
+    "title": "Expectations and Reality",
+    "language": "english",
+    "level": "B2",
+    "topic": "Happiness, Expectations, and Social Comparison",
+    "estimatedTime": "35 minutes",
+    "shortDescription": "完整版互動朗讀頁：含全文段落、重點單字、重要片語、逐段朗讀、語速、字級與深色模式。",
+    "coverImage": "",
+    "tags": ["reading", "full text", "expectations", "happiness", "listening", "B2"],
+    "publishedAt": "2026-06-16",
+    "updatedAt": "2026-06-16",
+    "featured": true,
+    "externalUrl": "full/expectations-and-reality.html"
   }
 ]

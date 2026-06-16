@@ -117,8 +117,8 @@
     }
     details.replaceChildren();
     details.append(window.JLL.dom.createElement("h2", { text: "Phrases, Grammar, Sentences, Practice" }));
-    appendSimpleSection(details, "Phrases", (lesson.phrases || []).map((item) => `${item.phrase}: ${item.chineseDefinition} · ${item.example}`));
-    appendSimpleSection(details, "Grammar", (lesson.grammar || []).map((item) => `${item.point}: ${item.explanation} Example: ${item.example}`));
+    appendPhraseSection(details, lesson.phrases || []);
+    appendGrammarSection(details, lesson.grammar || []);
     appendSimpleSection(details, "Important Sentences", (lesson.importantSentences || []).map((item) => `${item.sentence} ${item.note}`));
     appendSimpleSection(details, "Practice", (lesson.practice || []).map((item) => {
       const options = Array.isArray(item.options) ? ` Options: ${item.options.join(" / ")}` : "";
@@ -135,6 +135,42 @@
     parent.append(window.JLL.dom.createElement("h3", { text: title }));
     const list = window.JLL.dom.createElement("ul");
     rows.forEach((row) => list.append(window.JLL.dom.createElement("li", { text: row })));
+    parent.append(list);
+  }
+
+  function appendPhraseSection(parent, rows) {
+    if (!rows.length) {
+      return;
+    }
+    parent.append(window.JLL.dom.createElement("h3", { text: "Phrases" }));
+    const list = window.JLL.dom.createElement("ul", { className: "lesson-detail-list" });
+    rows.forEach((row) => {
+      const item = window.JLL.dom.createElement("li");
+      item.append(
+        window.JLL.dom.createElement("strong", { className: "detail-highlight phrase-highlight", text: row.phrase }),
+        document.createTextNode(`: ${row.chineseDefinition}`),
+        window.JLL.dom.createElement("span", { className: "detail-example", text: row.example })
+      );
+      list.append(item);
+    });
+    parent.append(list);
+  }
+
+  function appendGrammarSection(parent, rows) {
+    if (!rows.length) {
+      return;
+    }
+    parent.append(window.JLL.dom.createElement("h3", { text: "Grammar" }));
+    const list = window.JLL.dom.createElement("ul", { className: "lesson-detail-list" });
+    rows.forEach((row) => {
+      const item = window.JLL.dom.createElement("li");
+      item.append(
+        window.JLL.dom.createElement("strong", { className: "detail-highlight grammar-highlight", text: row.point }),
+        document.createTextNode(`: ${row.explanation}`),
+        window.JLL.dom.createElement("span", { className: "detail-example", text: `Example: ${row.example}` })
+      );
+      list.append(item);
+    });
     parent.append(list);
   }
 
