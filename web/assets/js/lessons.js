@@ -23,6 +23,11 @@
   function setupFilters() {
     fillSelect(window.JLL.dom.qs("#lesson-level"), uniqueOptions("level"));
     fillSelect(window.JLL.dom.qs("#lesson-topic"), uniqueOptions("topic"));
+    const searchParam = new URLSearchParams(window.location.search).get("search");
+    const searchInput = window.JLL.dom.qs("#lesson-search");
+    if (searchParam && searchInput) {
+      searchInput.value = searchParam;
+    }
     ["#lesson-search", "#lesson-language", "#lesson-level", "#lesson-topic"].forEach((selector) => {
       const control = window.JLL.dom.qs(selector);
       if (control) {
