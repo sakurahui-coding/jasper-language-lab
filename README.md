@@ -58,7 +58,7 @@ http://localhost:8080/
 4. Source 選擇 GitHub Actions。
 5. 等待 `Deploy GitHub Pages` workflow 完成。Workflow 會檢查必要檔案、JSON 語法、JavaScript 語法與 root-relative HTML asset paths，然後部署 `web/` 資料夾。
 6. 在 workflow summary 或 Settings -> Pages 找到網站公開網址。
-7. 開啟首頁、`lessons.html`、`reading.html?lesson=what-never-changes`，確認 CSS、JavaScript 與 JSON 都正常載入。
+7. 開啟首頁、`lessons.html`、`reading.html?lesson=europe-dam-removal`，確認 CSS、JavaScript 與 JSON 都正常載入。
 
 此專案使用相對路徑，不假設部署在網域根目錄，因此可在 GitHub Pages repository 子路徑運作。
 

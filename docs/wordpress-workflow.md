@@ -17,7 +17,7 @@ WordPress.com is used for public lesson pages, navigation, categories, tags, You
 Each interactive lesson uses this URL format:
 
 ```text
-https://your-github-pages-url/reading.html?lesson=what-never-changes
+https://your-github-pages-url/reading.html?lesson=europe-dam-removal
 ```
 
 The `lesson` value must match the `slug` in `web/data/lessons.json`.
@@ -25,7 +25,7 @@ The `lesson` value must match the `slug` in `web/data/lessons.json`.
 Current public practice URL:
 
 ```text
-https://sakurahui-coding.github.io/jasper-language-lab/reading.html?lesson=what-never-changes
+https://sakurahui-coding.github.io/jasper-language-lab/reading.html?lesson=europe-dam-removal
 ```
 
 For private reading use, keep the full article in a WordPress password-protected post. The GitHub Pages page should contain the interactive learning material and only a short excerpt or self-created text.
@@ -35,7 +35,7 @@ For private reading use, keep the full article in a WordPress password-protected
 In a WordPress paragraph or Custom HTML block, add a clear button-style link:
 
 ```html
-<p><a href="https://sakurahui-coding.github.io/jasper-language-lab/reading.html?lesson=what-never-changes">開始互動學習</a></p>
+<p><a href="https://sakurahui-coding.github.io/jasper-language-lab/reading.html?lesson=europe-dam-removal">開始互動學習</a></p>
 ```
 
 If the GitHub Pages URL changes, update:

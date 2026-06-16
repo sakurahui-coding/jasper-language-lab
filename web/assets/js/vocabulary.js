@@ -45,7 +45,7 @@
 
   async function loadRequestedLesson() {
     const params = new URLSearchParams(window.location.search);
-    const requestedSlug = params.get("lesson") || "what-never-changes";
+    const requestedSlug = params.get("lesson") || "europe-dam-removal";
     if (!/^[a-z0-9-]+$/.test(requestedSlug)) {
       return { ok: false, message: "教材網址格式不正確。" };
     }

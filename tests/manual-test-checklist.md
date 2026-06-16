@@ -8,7 +8,7 @@
 - [ ] Lessons page search and filters work.
 - [ ] Featured lessons appear before non-featured lessons.
 - [ ] Reading page loads sample lesson data.
-- [ ] Reading page loads `reading.html?lesson=what-never-changes`.
+- [ ] Reading page loads `reading.html?lesson=europe-dam-removal`.
 - [ ] Invalid lesson slug shows a friendly not-found state.
 - [ ] Lesson JSON load failure shows an error state instead of a blank page.
 - [ ] Vocabulary popover appears when clicking a highlighted word.

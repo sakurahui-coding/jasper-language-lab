@@ -11,7 +11,7 @@
 
 - [ ] Home page opens.
 - [ ] Lessons page opens at `lessons.html`.
-- [ ] Reading page opens with a valid lesson: `reading.html?lesson=what-never-changes`.
+- [ ] Reading page opens with a valid lesson: `reading.html?lesson=europe-dam-removal`.
 - [ ] Invalid lesson slugs show a friendly not-found state.
 - [ ] CSS loads correctly on the deployed subpath.
 - [ ] JavaScript loads correctly on the deployed subpath.
@@ -25,4 +25,3 @@
 - [ ] No passwords, tokens, cookies, or API keys are committed.
 - [ ] No complete copyrighted article is committed without authorization.
 - [ ] No complete copyrighted lyrics are committed.
-

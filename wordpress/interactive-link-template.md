@@ -15,16 +15,16 @@ Recommended setup:
 ## Link Format
 
 ```text
-https://sakurahui-coding.github.io/jasper-language-lab/reading.html?lesson=what-never-changes
+https://sakurahui-coding.github.io/jasper-language-lab/reading.html?lesson=europe-dam-removal
 ```
 
-Replace `what-never-changes` with the lesson slug from `web/data/lessons.json` when you create a new lesson.
+Replace `europe-dam-removal` with the lesson slug from `web/data/lessons.json` when you create a new lesson.
 
 ## Custom HTML Block Example
 
 ```html
 <p>
-  <a href="https://sakurahui-coding.github.io/jasper-language-lab/reading.html?lesson=what-never-changes">
+  <a href="https://sakurahui-coding.github.io/jasper-language-lab/reading.html?lesson=europe-dam-removal">
     開始互動學習
   </a>
 </p>

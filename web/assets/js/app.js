@@ -135,16 +135,18 @@
       return;
     }
     const state = window.JLL.storage.getState();
-    const last = state.lastOpenedLesson || lessons[0];
+    const stored = state.lastOpenedLesson;
+    const last = lessons.find((lesson) => lesson.slug === stored?.slug) || lessons[0];
     if (last) {
+      const lessonUrl = last.externalUrl || `reading.html?lesson=${encodeURIComponent(last.slug)}`;
       recentCard.replaceChildren(
         createElement("h2", { text: "最近閱讀文章" }),
-        createElement("p", { text: last.title || "What Never Changes in a Changing World" }),
+        createElement("p", { text: last.title || "115學測英文第一大題：單字與片語朗讀版" }),
         createElement("p", { className: "muted", text: "進度是依最後選取的段落估算，不代表精準字數位置。" }),
         createElement("a", {
           className: "button secondary",
           text: "繼續閱讀",
-          attrs: { href: `reading.html?lesson=${encodeURIComponent(last.slug || "what-never-changes")}` }
+          attrs: { href: lessonUrl }
         })
       );
     }
@@ -154,10 +156,11 @@
       featuredCard.append(createElement("p", { className: "muted", text: "教材索引暫時無法載入，請稍後再試。" }));
     } else {
       featured.forEach((lesson) => {
+        const lessonUrl = lesson.externalUrl || `reading.html?lesson=${encodeURIComponent(lesson.slug)}`;
         featuredCard.append(createElement("a", {
           className: "pill",
           text: lesson.title,
-          attrs: { href: `reading.html?lesson=${encodeURIComponent(lesson.slug)}` }
+          attrs: { href: lessonUrl }
         }));
       });
     }
