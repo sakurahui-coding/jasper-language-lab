@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12324A">
+  <meta name="description" content="英文多音字優質整理版：25 組常見多音字，雙讀音、詞性、中文意思、例句與手機朗讀練習。">
+  <title>英文多音字｜發音與意思對照朗讀版</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-soft: #eef5f7;
+      --ink: #162033;
+      --muted: #667085;
+      --line: #d9e2ec;
+      --brand: #12324a;
+      --brand-2: #0f766e;
+      --accent: #b42318;
+      --blue-soft: #eaf1ff;
+      --green-soft: #e7f8f1;
+      --shadow: 0 16px 38px rgba(18, 50, 74, .10);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Noto Sans", Arial, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(14px);
+    }
+    .topbar-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 10px 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    button, select, input { font: inherit; }
+    button, .nav-link {
+      border: 1px solid transparent;
+      border-radius: 10px;
+      min-height: 40px;
+      padding: 8px 11px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    button.secondary, .nav-link.secondary {
+      background: var(--surface-soft);
+      color: var(--brand);
+      border-color: var(--line);
+    }
+    button.stop { background: var(--accent); }
+    select, input {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 10px;
+    }
+    input { flex: 1 1 180px; min-width: 0; }
+    main { max-width: 1060px; margin: 0 auto; padding: 18px 14px 64px; }
+    .hero {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: minmax(0, 1.6fr) minmax(250px, .8fr);
+      align-items: end;
+      padding: 28px 0 18px;
+    }
+    h1 { font-size: clamp(2rem, 7vw, 4.2rem); line-height: 1; margin: 0 0 12px; letter-spacing: 0; }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--brand-2);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .78rem;
+    }
+    .lead { font-size: clamp(1.05rem, 2.8vw, 1.28rem); color: #3b4658; margin: 0; }
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
+    .stat { background: var(--surface-soft); border-radius: 12px; padding: 10px; }
+    .stat strong { display: block; font-size: 1.35rem; line-height: 1.1; }
+    .stat span { color: var(--muted); font-size: .85rem; }
+    .guide {
+      background: #fff8e8;
+      border: 1px solid #f1d28a;
+      border-radius: var(--radius);
+      padding: 13px 15px;
+      margin-bottom: 14px;
+    }
+    .guide p { margin: 0; }
+    .index-list {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 0 0 16px;
+    }
+    .index-list a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      padding: 5px 10px;
+      text-decoration: none;
+      font-weight: 800;
+      color: var(--brand);
+    }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 8px 22px rgba(18, 50, 74, .06);
+    }
+    .card.is-playing { outline: 3px solid rgba(15, 118, 110, .28); }
+    .card-head { display: flex; justify-content: space-between; align-items: start; gap: 12px; margin-bottom: 12px; }
+    .word { font-size: clamp(1.7rem, 6vw, 2.45rem); line-height: 1; margin: 0; color: var(--brand); }
+    .word small { display: block; margin-top: 6px; color: var(--muted); font-size: .85rem; font-weight: 700; }
+    .meaning-grid { display: grid; gap: 10px; }
+    .meaning { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; }
+    .meaning:first-child .meaning-top { background: var(--blue-soft); }
+    .meaning:nth-child(2) .meaning-top { background: var(--green-soft); }
+    .meaning-top { padding: 10px 12px; display: grid; gap: 5px; }
+    .label-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .tag { display: inline-flex; border-radius: 999px; padding: 2px 8px; background: #fff; color: var(--brand); font-weight: 900; font-size: .82rem; }
+    .pos { font-weight: 900; color: var(--brand-2); }
+    .ipa { font-size: 1.1rem; font-weight: 900; }
+    .zh { font-size: 1.12rem; font-weight: 900; }
+    .example-row { display: grid; gap: 8px; padding: 10px 12px 12px; }
+    .example { margin: 0; font-size: 1.05rem; }
+    .example strong { color: var(--brand); }
+    .speak-example { justify-self: start; background: var(--surface-soft); color: var(--brand); border-color: var(--line); }
+    .hidden { display: none !important; }
+    footer { max-width: 1060px; margin: 0 auto; padding: 0 14px 34px; color: var(--muted); }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; padding-top: 18px; }
+      .grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .topbar-inner { align-items: stretch; }
+      .topbar-inner button, .topbar-inner .nav-link { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="nav-link secondary" href="../lessons.html">← 教材列表</a>
+      <button id="readAll">▶ 全部朗讀</button>
+      <button id="stop" class="stop">■ 停止</button>
+      <select id="rate" aria-label="朗讀速度">
+        <option value="0.75">0.75×</option>
+        <option value="0.9">0.9×</option>
+        <option value="1" selected>1.0×</option>
+        <option value="1.15">1.15×</option>
+        <option value="1.3">1.3×</option>
+      </select>
+      <input id="search" type="search" placeholder="搜尋單字、意思或例句" aria-label="搜尋單字、意思或例句">
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Pronunciation Lab</p>
+        <h1 id="page-title">英文多音字</h1>
+        <p class="lead">同一個拼字，因詞性或意思不同而有不同讀音。用「讀音對照 + 例句朗讀」建立耳朵記憶，適合手機反覆複習。</p>
+      </div>
+      <aside class="hero-card" aria-label="教材摘要">
+        <div class="stats">
+          <div class="stat"><strong>25</strong><span>組多音字</span></div>
+          <div class="stat"><strong>50</strong><span>個讀音</span></div>
+          <div class="stat"><strong>50</strong><span>句例句</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="guide">
+      <p><strong>學習方式：</strong>先看詞性與重音位置，再聽例句。藍色區通常是第一種讀音，綠色區是第二種讀音；聽完後試著自己造句。</p>
+    </section>
+
+    <nav id="index" class="index-list" aria-label="單字索引"></nav>
+    <section id="cards" class="grid" aria-label="多音字卡片"></section>
+  </main>
+
+  <footer>使用瀏覽器 Web Speech API 朗讀；iPhone 建議使用 Safari。若沒有聲音，請先點任一朗讀按鈕啟用語音。</footer>
+
+  <script id="lesson-data" type="application/json">
+[
+  {
+    "word": "record",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "名詞",
+        "pronunciation": "/ˈrek.ərd/",
+        "meaning": "紀錄",
+        "example": "I made a record of the meeting."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "動詞",
+        "pronunciation": "/rɪˈkɔːrd/",
+        "meaning": "記錄",
+        "example": "Please record the meeting."
+      }
+    ]
+  },
+  {
+    "word": "present",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "名詞",
+        "pronunciation": "/ˈprez.ənt/",
+        "meaning": "禮物",
+        "example": "She gave me a present."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "動詞",
+        "pronunciation": "/prɪˈzent/",
+        "meaning": "呈現",
+        "example": "She will present her project tomorrow."
+      }
+    ]
+  },
+  {
+    "word": "produce",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "名詞",
+        "pronunciation": "/ˈproʊ.duːs/",
+        "meaning": "農產品",
+        "example": "Fresh produce is sold here."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "動詞",
+        "pronunciation": "/prəˈduːs/",
+        "meaning": "生產",
+        "example": "This factory produces cars."
+      }
+    ]
+  },
+  {
+    "word": "project",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "名詞",
+        "pronunciation": "/ˈprɑː.dʒekt/",
+        "meaning": "計畫",
+        "example": "This is my science project."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "動詞",
+        "pronunciation": "/prəˈdʒekt/",
+        "meaning": "投射",
+        "example": "The lamp projects light onto the wall."
+      }
+    ]
+  },
+  {
+    "word": "object",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "名詞",
+        "pronunciation": "/ˈɑːb.dʒekt/",
+        "meaning": "物體",
+        "example": "What is that object?"
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "動詞",
+        "pronunciation": "/əbˈdʒekt/",
+        "meaning": "反對",
+        "example": "I object to this plan."
+      }
+    ]
+  },
+  {
+    "word": "subject",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "名詞",
+        "pronunciation": "/ˈsʌb.dʒekt/",
+        "meaning": "科目",
+        "example": "English is my favorite subject."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "動詞",
+        "pronunciation": "/səbˈdʒekt/",
+        "meaning": "使遭受",
+        "example": "Do not subject the animals to stress."
+      }
+    ]
+  },
+  {
+    "word": "conduct",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "名詞",
+        "pronunciation": "/ˈkɑːn.dʌkt/",
+        "meaning": "行為",
+        "example": "His conduct was excellent."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "動詞",
+        "pronunciation": "/kənˈdʌkt/",
+        "meaning": "進行",
+        "example": "They will conduct an experiment."
+      }
+    ]
+  },
+  {
+    "word": "permit",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "名詞",
+        "pronunciation": "/ˈpɝː.mɪt/",
+        "meaning": "許可證",
+        "example": "You need a parking permit."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "動詞",
+        "pronunciation": "/pɚˈmɪt/",
+        "meaning": "允許",
+        "example": "They do not permit smoking."
+      }
+    ]
+  },
+  {
+    "word": "lead",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/liːd/ 帶領",
+        "meaning": "",
+        "example": "She will lead the team."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/led/ 鉛",
+        "meaning": "",
+        "example": "The pipe contains lead."
+      }
+    ]
+  },
+  {
+    "word": "wind",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/wɪnd/ 風",
+        "meaning": "",
+        "example": "The wind is strong today."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/waɪnd/ 纏繞",
+        "meaning": "",
+        "example": "Wind the string around the box."
+      }
+    ]
+  },
+  {
+    "word": "tear",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/tɪr/ 眼淚",
+        "meaning": "",
+        "example": "A tear rolled down her face."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/ter/ 撕裂",
+        "meaning": "",
+        "example": "Do not tear the paper."
+      }
+    ]
+  },
+  {
+    "word": "bow",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/boʊ/ 弓、蝴蝶結",
+        "meaning": "",
+        "example": "She tied a bow on the gift."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/baʊ/ 鞠躬",
+        "meaning": "",
+        "example": "The actors bow after the show."
+      }
+    ]
+  },
+  {
+    "word": "row",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/roʊ/ 一排、划船",
+        "meaning": "",
+        "example": "We sat in the front row."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/raʊ/ 爭吵",
+        "meaning": "",
+        "example": "They had a row yesterday."
+      }
+    ]
+  },
+  {
+    "word": "live",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/lɪv/ 居住",
+        "meaning": "",
+        "example": "They live in Taipei."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/laɪv/ 現場的",
+        "meaning": "",
+        "example": "This is a live show."
+      }
+    ]
+  },
+  {
+    "word": "use",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/juːs/ 用途（名詞）",
+        "meaning": "",
+        "example": "This tool has many uses."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/juːz/ 使用（動詞）",
+        "meaning": "",
+        "example": "I use this tool every day."
+      }
+    ]
+  },
+  {
+    "word": "close",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/kloʊs/ 接近的",
+        "meaning": "",
+        "example": "The school is close to my house."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/kloʊz/ 關閉",
+        "meaning": "",
+        "example": "Please close the door."
+      }
+    ]
+  },
+  {
+    "word": "read",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/riːd/ 現在式",
+        "meaning": "",
+        "example": "I read this book every day."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/red/ 過去式",
+        "meaning": "",
+        "example": "I read it yesterday."
+      }
+    ]
+  },
+  {
+    "word": "wound",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/wuːnd/ 傷口",
+        "meaning": "",
+        "example": "The wound is healing."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/waʊnd/ wind 的過去式",
+        "meaning": "",
+        "example": "She wound the clock."
+      }
+    ]
+  },
+  {
+    "word": "content",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈkɑːn.tent/ 內容",
+        "meaning": "",
+        "example": "The content is useful."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/kənˈtent/ 滿足的",
+        "meaning": "",
+        "example": "She felt content with her life."
+      }
+    ]
+  },
+  {
+    "word": "refuse",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈref.juːs/ 垃圾",
+        "meaning": "",
+        "example": "The refuse is collected on Monday."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/rɪˈfjuːz/ 拒絕",
+        "meaning": "",
+        "example": "I refuse to give up."
+      }
+    ]
+  },
+  {
+    "word": "desert",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈdez.ɚt/ 沙漠",
+        "meaning": "",
+        "example": "The Sahara is a vast desert."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/dɪˈzɝːt/ 遺棄",
+        "meaning": "",
+        "example": "Do not desert your friends."
+      }
+    ]
+  },
+  {
+    "word": "separate",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈsep.ər.ət/ 分開的（形容詞）",
+        "meaning": "",
+        "example": "They live in separate rooms."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈsep.ə.reɪt/ 分開（動詞）",
+        "meaning": "",
+        "example": "Please separate the white clothes."
+      }
+    ]
+  },
+  {
+    "word": "graduate",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈɡrædʒ.u.ət/ 畢業生",
+        "meaning": "",
+        "example": "She is a university graduate."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈɡrædʒ.u.eɪt/ 畢業",
+        "meaning": "",
+        "example": "He will graduate next year."
+      }
+    ]
+  },
+  {
+    "word": "Polish / polish",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈpoʊ.lɪʃ/ 波蘭的",
+        "meaning": "",
+        "example": "She speaks Polish."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈpɑː.lɪʃ/ 擦亮",
+        "meaning": "",
+        "example": "Please polish your shoes."
+      }
+    ]
+  },
+  {
+    "word": "August / august",
+    "meanings": [
+      {
+        "label": "讀音 1",
+        "partOfSpeech": "",
+        "pronunciation": "/ˈɔː.ɡəst/ 八月",
+        "meaning": "",
+        "example": "School begins in August."
+      },
+      {
+        "label": "讀音 2",
+        "partOfSpeech": "",
+        "pronunciation": "/ɔːˈɡʌst/ 威嚴的",
+        "meaning": "",
+        "example": "They entered the august hall."
+      }
+    ]
+  }
+]
+  </script>
+  <script>
+    const items = JSON.parse(document.getElementById('lesson-data').textContent);
+    const cards = document.getElementById('cards');
+    const index = document.getElementById('index');
+    const search = document.getElementById('search');
+    const rate = document.getElementById('rate');
+    let queue = [];
+    let activeCard = null;
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+    }
+
+    function render() {
+      cards.innerHTML = '';
+      index.innerHTML = '';
+      items.forEach((item, itemIndex) => {
+        const link = document.createElement('a');
+        link.href = '#word-' + itemIndex;
+        link.textContent = item.word;
+        index.append(link);
+
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.id = 'word-' + itemIndex;
+        card.dataset.search = [item.word, ...item.meanings.flatMap((m) => [m.partOfSpeech, m.pronunciation, m.meaning, m.example])].join(' ').toLowerCase();
+        card.innerHTML = `
+          <div class="card-head">
+            <h2 class="word">${escapeHtml(item.word)}<small>heteronym / 多音字</small></h2>
+            <button class="secondary speak-word" type="button" data-text="${escapeHtml(item.word.split('/')[0].trim())}">🔊 單字</button>
+          </div>
+          <div class="meaning-grid">
+            ${item.meanings.map((meaning) => `
+              <div class="meaning">
+                <div class="meaning-top">
+                  <div class="label-row"><span class="tag">${escapeHtml(meaning.label)}</span><span class="pos">${escapeHtml(meaning.partOfSpeech)}</span></div>
+                  <div class="ipa">${escapeHtml(meaning.pronunciation)}</div>
+                  <div class="zh">${escapeHtml(meaning.meaning)}</div>
+                </div>
+                <div class="example-row">
+                  <p class="example">${highlightWord(meaning.example, item.word)}</p>
+                  <button class="speak-example" type="button" data-text="${escapeHtml(meaning.example)}">▶ 朗讀例句</button>
+                </div>
+              </div>
+            `).join('')}
+          </div>`;
+        cards.append(card);
+      });
+    }
+
+    function highlightWord(sentence, word) {
+      const primary = word.split('/')[0].trim();
+      const escaped = primary.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const pattern = new RegExp('\\b(' + escaped + ')\\b', 'gi');
+      return escapeHtml(sentence).replace(pattern, '<strong>$1</strong>');
+    }
+
+    function getVoice() {
+      const voices = speechSynthesis.getVoices();
+      return voices.find((voice) => voice.lang === 'en-US') || voices.find((voice) => voice.lang.startsWith('en')) || voices[0];
+    }
+
+    function speak(text, card) {
+      speechSynthesis.cancel();
+      clearActive();
+      activeCard = card || null;
+      if (activeCard) {
+        activeCard.classList.add('is-playing');
+        activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = Number(rate.value);
+      const voice = getVoice();
+      if (voice) utterance.voice = voice;
+      utterance.onend = () => clearActive();
+      speechSynthesis.speak(utterance);
+    }
+
+    function clearActive() {
+      if (activeCard) activeCard.classList.remove('is-playing');
+      activeCard = null;
+    }
+
+    function speakNext() {
+      if (!queue.length) { clearActive(); return; }
+      const next = queue.shift();
+      speechSynthesis.cancel();
+      clearActive();
+      activeCard = next.card;
+      activeCard.classList.add('is-playing');
+      activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const utterance = new SpeechSynthesisUtterance(next.text);
+      utterance.lang = 'en-US';
+      utterance.rate = Number(rate.value);
+      const voice = getVoice();
+      if (voice) utterance.voice = voice;
+      utterance.onend = speakNext;
+      utterance.onerror = () => clearActive();
+      speechSynthesis.speak(utterance);
+    }
+
+    document.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-text]');
+      if (!button) return;
+      speak(button.dataset.text, button.closest('.card'));
+    });
+
+    document.getElementById('readAll').addEventListener('click', () => {
+      queue = Array.from(document.querySelectorAll('.card:not(.hidden)')).flatMap((card) =>
+        Array.from(card.querySelectorAll('.speak-example')).map((button) => ({ text: button.dataset.text, card }))
+      );
+      speakNext();
+    });
+
+    document.getElementById('stop').addEventListener('click', () => {
+      queue = [];
+      speechSynthesis.cancel();
+      clearActive();
+    });
+
+    search.addEventListener('input', () => {
+      const keyword = search.value.trim().toLowerCase();
+      document.querySelectorAll('.card').forEach((card) => {
+        card.classList.toggle('hidden', keyword && !card.dataset.search.includes(keyword));
+      });
+    });
+
+    speechSynthesis.onvoiceschanged = getVoice;
+    render();
+  </script>
+</body>
+</html>

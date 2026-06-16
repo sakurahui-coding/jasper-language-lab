@@ -46,5 +46,21 @@
     "updatedAt": "2026-06-16",
     "featured": true,
     "externalUrl": "full/115-gsat-english-cloze.html"
+  },
+  {
+    "id": "lesson-english-heteronyms-reading",
+    "slug": "english-heteronyms-reading",
+    "title": "英文多音字：發音與意思對照朗讀版",
+    "language": "english",
+    "level": "A2-B2",
+    "topic": "Heteronyms, Pronunciation, Vocabulary, and Listening Practice",
+    "estimatedTime": "20 minutes",
+    "shortDescription": "25 組常見英文多音字優質整理版：雙讀音、詞性、中文意思、例句、搜尋與手機朗讀練習。",
+    "coverImage": "",
+    "tags": ["pronunciation", "heteronyms", "vocabulary", "listening", "mobile"],
+    "publishedAt": "2026-06-16",
+    "updatedAt": "2026-06-16",
+    "featured": true,
+    "externalUrl": "full/english-heteronyms-reading.html"
   }
 ]
