@@ -78,5 +78,37 @@
     "updatedAt": "2026-06-16",
     "featured": true,
     "externalUrl": "full/expectations-and-reality.html"
+  },
+  {
+    "id": "lesson-115-gsat-english-vocabulary-phrases",
+    "slug": "115-gsat-english-vocabulary-phrases",
+    "title": "115學測英文第一大題：單字與片語朗讀版",
+    "language": "english",
+    "level": "GSAT",
+    "topic": "Vocabulary, Phrases, and Listening Practice",
+    "estimatedTime": "25 minutes",
+    "shortDescription": "115學測英文第一大題完整互動朗讀頁：單字、片語、題目朗讀與重點整理。",
+    "coverImage": "",
+    "tags": ["GSAT", "vocabulary", "phrases", "listening", "full text"],
+    "publishedAt": "2026-06-16",
+    "updatedAt": "2026-06-16",
+    "featured": true,
+    "externalUrl": "full/115-gsat-english-vocabulary-phrases.html"
+  },
+  {
+    "id": "lesson-115-gsat-english-cloze",
+    "slug": "115-gsat-english-cloze",
+    "title": "115學測英文第二大題：綜合測驗朗讀版",
+    "language": "english",
+    "level": "GSAT",
+    "topic": "Cloze Test, Grammar, and Context Reading",
+    "estimatedTime": "25 minutes",
+    "shortDescription": "115學測英文第二大題完整互動朗讀頁：綜合測驗、句意理解、文法脈絡與朗讀練習。",
+    "coverImage": "",
+    "tags": ["GSAT", "cloze", "grammar", "context", "listening", "full text"],
+    "publishedAt": "2026-06-16",
+    "updatedAt": "2026-06-16",
+    "featured": true,
+    "externalUrl": "full/115-gsat-english-cloze.html"
   }
 ]

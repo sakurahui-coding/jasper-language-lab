@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>115學測英文第一大題｜單字與片語朗讀版</title>
+<style>
+:root {
+  --bg:#f5f7fb; --card:#fff; --ink:#182033; --muted:#64748b;
+  --brand:#3157d5; --soft:#eaf0ff; --green:#087f5b; --border:#dce3ef;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",Arial,sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.65;
+}
+header {
+  position:sticky; top:0; z-index:10; padding:14px 16px 12px;
+  background:rgba(255,255,255,.94); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+h1 { font-size:20px; margin:0 0 8px; }
+.controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+select, button {
+  font:inherit; border-radius:12px; border:1px solid var(--border); background:#fff;
+}
+select { padding:8px 10px; }
+button { cursor:pointer; touch-action:manipulation; }
+.global { padding:9px 12px; font-weight:700; }
+.stop { color:#b42318; }
+main { max-width:820px; margin:auto; padding:16px 12px 50px; }
+.note {
+  background:#fff7db; border:1px solid #f0d77a; border-radius:14px;
+  padding:10px 12px; margin-bottom:14px; font-size:14px;
+}
+.card {
+  background:var(--card); border:1px solid var(--border); border-radius:20px;
+  padding:17px; margin:0 0 16px; box-shadow:0 8px 24px rgba(25,40,80,.06);
+}
+.qhead { display:flex; justify-content:space-between; align-items:center; gap:10px; }
+.qnum { font-weight:800; color:var(--brand); }
+.answer { color:var(--green); font-weight:800; background:#e9fbf4; padding:4px 9px; border-radius:999px; }
+.sentence { font-size:19px; font-weight:700; margin:14px 0 10px; }
+.actions { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+.primary, .secondary { padding:10px 13px; font-weight:750; }
+.primary { background:var(--brand); color:#fff; border-color:var(--brand); }
+.secondary { background:var(--soft); color:var(--brand); border-color:#cad7ff; }
+.translation { color:#334155; background:#f8fafc; padding:10px 12px; border-radius:12px; }
+.wordbox { margin:12px 0; padding:12px; border-left:4px solid var(--brand); background:#f8faff; }
+.wordbox b { font-size:20px; margin-right:10px; }
+.wordbox span { color:var(--muted); }
+h3 { font-size:16px; margin:16px 0 8px; }
+.phrase-row {
+  display:flex; gap:10px; align-items:flex-start; padding:9px 0; border-bottom:1px dashed var(--border);
+}
+.phrase-row:last-child { border-bottom:0; }
+.play-mini {
+  width:36px; height:36px; flex:0 0 36px; border-radius:50%;
+  background:var(--soft); color:var(--brand); font-weight:900;
+}
+.phrase-row strong { display:block; }
+.phrase-row small { color:var(--muted); display:block; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; }
+.chip { text-align:left; padding:8px 10px; background:#fff; }
+.chip span { display:block; color:var(--muted); font-size:12px; }
+button.playing { outline:3px solid #ffd166; }
+footer { text-align:center; color:var(--muted); font-size:13px; padding:18px; }
+@media (max-width:560px) {
+  .sentence { font-size:18px; }
+  .card { padding:15px; border-radius:17px; }
+  .primary, .secondary { flex:1; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>115學測英文｜第一大題單字與片語朗讀版</h1>
+  <div class="controls">
+    <label>口音
+      <select id="voiceMode">
+        <option value="en-US">美式英文</option>
+        <option value="en-GB">英式英文</option>
+      </select>
+    </label>
+    <label>速度
+      <select id="rate">
+        <option value="0.65">慢速 0.65×</option>
+        <option value="0.85" selected>學習 0.85×</option>
+        <option value="1">正常 1×</option>
+        <option value="1.15">快速 1.15×</option>
+      </select>
+    </label>
+    <button class="global speak" data-text="Question 1. tight. The mayor has such a tight schedule that it takes weeks to arrange an interview with her. Question 2. amateur. Jane started as an amateur art designer, but now she has a professional studio of her own. Question 3. vacancy. The teaching vacancy at the famous high school soon attracted more than a dozen well-qualified applicants. Question 4. initially. Designed by a young engineer, the new product has created far more profit than initially expected. Question 5. consumption. It has been confirmed that a balanced consumption of fruit and vegetables is a key element to good health. Question 6. dreads. As a shy boy afraid of making public appearances, Timmy dreads the thought of speaking before large audiences. Question 7. passion. To the newly-crowned winner of the piano competition, music is his life&#x27;s passion, which he has devoted himself to whole-heartedly. Question 8. assaulted. The drunk driver who shouted at passers-by and assaulted them with glass bottles was quickly arrested by the police. Question 9. elbow. There were so many people at the bus station that I had to elbow my way through the crowd to board the bus in time. Question 10. grave. Deadly shootings on U.S. campuses have raised grave concerns about how to prevent such tragic incidents from happening again.">▶ 全部複習</button>
+    <button class="global stop" id="stop">■ 停止</button>
+  </div>
+</header>
+<main>
+  <div class="note">點按「朗讀整句、朗讀單字、片語或選項」即可播放。手機請使用 Safari 或 Chrome 開啟，並確認不是靜音模式。</div>
+  
+    <section class="card" id="q1">
+      <div class="qhead">
+        <span class="qnum">第 1 題</span>
+        <span class="answer">答案：tight</span>
+      </div>
+      <div class="sentence">The mayor has such a tight schedule that it takes weeks to arrange an interview with her.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="The mayor has such a tight schedule that it takes weeks to arrange an interview with her.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="tight">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">這位市長的行程非常緊湊，以至於要安排與她面談，得花上好幾個星期。</div>
+      <div class="wordbox">
+        <div><b>tight</b><span>緊湊的；排得很滿的</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="a tight schedule">▶</button>
+              <div><strong>a tight schedule</strong><small>緊湊的行程</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="arrange an interview with someone">▶</button>
+              <div><strong>arrange an interview with someone</strong><small>安排與某人面談</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="It takes time to do something.">▶</button>
+              <div><strong>It takes time to do something.</strong><small>做某事需要時間</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="such a ... that ...">▶</button>
+              <div><strong>such a ... that ...</strong><small>如此……以至於……</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="hasty">hasty <span>匆忙的；草率的</span></button><button class="chip speak" data-text="tight">tight <span>緊湊的</span></button><button class="chip speak" data-text="diligent">diligent <span>勤奮的</span></button><button class="chip speak" data-text="routine">routine <span>例行的</span></button></div>
+    </section>
+    
+    <section class="card" id="q2">
+      <div class="qhead">
+        <span class="qnum">第 2 題</span>
+        <span class="answer">答案：amateur</span>
+      </div>
+      <div class="sentence">Jane started as an amateur art designer, but now she has a professional studio of her own.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="Jane started as an amateur art designer, but now she has a professional studio of her own.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="amateur">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">Jane一開始是一名業餘美術設計師，但現在她已經擁有自己的專業工作室。</div>
+      <div class="wordbox">
+        <div><b>amateur</b><span>業餘的；非專業的</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="start as">▶</button>
+              <div><strong>start as</strong><small>起初擔任；以某種身分開始</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="an amateur designer">▶</button>
+              <div><strong>an amateur designer</strong><small>業餘設計師</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="a studio of her own">▶</button>
+              <div><strong>a studio of her own</strong><small>一間屬於她自己的工作室</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="amateur versus professional">▶</button>
+              <div><strong>amateur versus professional</strong><small>業餘與專業的對比</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="official">official <span>官方的；正式的</span></button><button class="chip speak" data-text="instant">instant <span>立即的</span></button><button class="chip speak" data-text="amateur">amateur <span>業餘的</span></button><button class="chip speak" data-text="elementary">elementary <span>初級的；基本的</span></button></div>
+    </section>
+    
+    <section class="card" id="q3">
+      <div class="qhead">
+        <span class="qnum">第 3 題</span>
+        <span class="answer">答案：vacancy</span>
+      </div>
+      <div class="sentence">The teaching vacancy at the famous high school soon attracted more than a dozen well-qualified applicants.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="The teaching vacancy at the famous high school soon attracted more than a dozen well-qualified applicants.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="vacancy">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">那所知名高中的教師職缺，很快便吸引了十多位條件優秀的申請者。</div>
+      <div class="wordbox">
+        <div><b>vacancy</b><span>職缺；空缺</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="a teaching vacancy">▶</button>
+              <div><strong>a teaching vacancy</strong><small>教師職缺</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="attract applicants">▶</button>
+              <div><strong>attract applicants</strong><small>吸引申請者</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="more than a dozen">▶</button>
+              <div><strong>more than a dozen</strong><small>超過十二個</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="well-qualified applicants">▶</button>
+              <div><strong>well-qualified applicants</strong><small>條件優秀的申請者</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="career">career <span>職業生涯</span></button><button class="chip speak" data-text="vacancy">vacancy <span>職缺</span></button><button class="chip speak" data-text="expectation">expectation <span>期待</span></button><button class="chip speak" data-text="inspiration">inspiration <span>靈感；啟發</span></button></div>
+    </section>
+    
+    <section class="card" id="q4">
+      <div class="qhead">
+        <span class="qnum">第 4 題</span>
+        <span class="answer">答案：initially</span>
+      </div>
+      <div class="sentence">Designed by a young engineer, the new product has created far more profit than initially expected.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="Designed by a young engineer, the new product has created far more profit than initially expected.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="initially">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">這項由一位年輕工程師設計的新產品，創造的利潤遠超過最初的預期。</div>
+      <div class="wordbox">
+        <div><b>initially</b><span>最初；起初</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="initially expected">▶</button>
+              <div><strong>initially expected</strong><small>最初預期</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="far more than expected">▶</button>
+              <div><strong>far more than expected</strong><small>遠比預期更多</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="create a profit">▶</button>
+              <div><strong>create a profit</strong><small>創造利潤</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="designed by a young engineer">▶</button>
+              <div><strong>designed by a young engineer</strong><small>由一位年輕工程師設計</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="initially">initially <span>最初</span></button><button class="chip speak" data-text="genuinely">genuinely <span>真正地；真誠地</span></button><button class="chip speak" data-text="alternatively">alternatively <span>或者；作為替代</span></button><button class="chip speak" data-text="fundamentally">fundamentally <span>根本上</span></button></div>
+    </section>
+    
+    <section class="card" id="q5">
+      <div class="qhead">
+        <span class="qnum">第 5 題</span>
+        <span class="answer">答案：consumption</span>
+      </div>
+      <div class="sentence">It has been confirmed that a balanced consumption of fruit and vegetables is a key element to good health.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="It has been confirmed that a balanced consumption of fruit and vegetables is a key element to good health.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="consumption">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">研究已證實，均衡地攝取水果和蔬菜，是維持健康的重要因素。</div>
+      <div class="wordbox">
+        <div><b>consumption</b><span>攝取；消耗</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="It has been confirmed that">▶</button>
+              <div><strong>It has been confirmed that</strong><small>已經證實……</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="a balanced consumption of fruit and vegetables">▶</button>
+              <div><strong>a balanced consumption of fruit and vegetables</strong><small>均衡攝取水果和蔬菜</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="a key element to good health">▶</button>
+              <div><strong>a key element to good health</strong><small>健康的關鍵要素</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="reduce sugar consumption">▶</button>
+              <div><strong>reduce sugar consumption</strong><small>減少糖分攝取</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="dimension">dimension <span>層面；尺寸</span></button><button class="chip speak" data-text="integration">integration <span>整合</span></button><button class="chip speak" data-text="provision">provision <span>提供；供應</span></button><button class="chip speak" data-text="consumption">consumption <span>攝取；消耗</span></button></div>
+    </section>
+    
+    <section class="card" id="q6">
+      <div class="qhead">
+        <span class="qnum">第 6 題</span>
+        <span class="answer">答案：dreads</span>
+      </div>
+      <div class="sentence">As a shy boy afraid of making public appearances, Timmy dreads the thought of speaking before large audiences.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="As a shy boy afraid of making public appearances, Timmy dreads the thought of speaking before large audiences.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="dreads">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">Timmy是個害羞、害怕公開露面的男孩，他非常恐懼在大批觀眾面前演講這件事。</div>
+      <div class="wordbox">
+        <div><b>dreads</b><span>非常害怕；畏懼</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="be afraid of making public appearances">▶</button>
+              <div><strong>be afraid of making public appearances</strong><small>害怕公開露面</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="dread the thought of speaking">▶</button>
+              <div><strong>dread the thought of speaking</strong><small>害怕想到要演講</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="speak before large audiences">▶</button>
+              <div><strong>speak before large audiences</strong><small>在大批觀眾面前演講</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="dread doing something">▶</button>
+              <div><strong>dread doing something</strong><small>非常害怕做某事</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="dreads">dreads <span>畏懼</span></button><button class="chip speak" data-text="stresses">stresses <span>強調；使焦慮</span></button><button class="chip speak" data-text="wanders">wanders <span>漫步；走神</span></button><button class="chip speak" data-text="escapes">escapes <span>逃離</span></button></div>
+    </section>
+    
+    <section class="card" id="q7">
+      <div class="qhead">
+        <span class="qnum">第 7 題</span>
+        <span class="answer">答案：passion</span>
+      </div>
+      <div class="sentence">To the newly-crowned winner of the piano competition, music is his life&#x27;s passion, which he has devoted himself to whole-heartedly.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="To the newly-crowned winner of the piano competition, music is his life&#x27;s passion, which he has devoted himself to whole-heartedly.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="passion">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">對這位剛獲得鋼琴比賽冠軍的人而言，音樂是他一生的熱愛，他全心全意地投入其中。</div>
+      <div class="wordbox">
+        <div><b>passion</b><span>熱愛；熱情</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="a newly-crowned winner">▶</button>
+              <div><strong>a newly-crowned winner</strong><small>新科冠軍</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="one&#x27;s life&#x27;s passion">▶</button>
+              <div><strong>one&#x27;s life&#x27;s passion</strong><small>一生的熱愛</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="devote oneself to">▶</button>
+              <div><strong>devote oneself to</strong><small>致力於；投入於</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="whole-heartedly">▶</button>
+              <div><strong>whole-heartedly</strong><small>全心全意地</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="resource">resource <span>資源</span></button><button class="chip speak" data-text="impact">impact <span>影響</span></button><button class="chip speak" data-text="passion">passion <span>熱愛；熱情</span></button><button class="chip speak" data-text="emphasis">emphasis <span>強調；重點</span></button></div>
+    </section>
+    
+    <section class="card" id="q8">
+      <div class="qhead">
+        <span class="qnum">第 8 題</span>
+        <span class="answer">答案：assaulted</span>
+      </div>
+      <div class="sentence">The drunk driver who shouted at passers-by and assaulted them with glass bottles was quickly arrested by the police.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="The drunk driver who shouted at passers-by and assaulted them with glass bottles was quickly arrested by the police.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="assaulted">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">那名酒醉駕駛對路人大吼，還拿玻璃瓶攻擊他們，很快就被警方逮捕。</div>
+      <div class="wordbox">
+        <div><b>assaulted</b><span>攻擊；襲擊</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="a drunk driver">▶</button>
+              <div><strong>a drunk driver</strong><small>酒醉駕駛</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="shout at passers-by">▶</button>
+              <div><strong>shout at passers-by</strong><small>對路人大吼</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="assault someone with something">▶</button>
+              <div><strong>assault someone with something</strong><small>用某物攻擊某人</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="be arrested by the police">▶</button>
+              <div><strong>be arrested by the police</strong><small>被警方逮捕</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="shattered">shattered <span>打碎</span></button><button class="chip speak" data-text="assaulted">assaulted <span>攻擊</span></button><button class="chip speak" data-text="overturned">overturned <span>推翻；翻覆</span></button><button class="chip speak" data-text="condemned">condemned <span>譴責</span></button></div>
+    </section>
+    
+    <section class="card" id="q9">
+      <div class="qhead">
+        <span class="qnum">第 9 題</span>
+        <span class="answer">答案：elbow</span>
+      </div>
+      <div class="sentence">There were so many people at the bus station that I had to elbow my way through the crowd to board the bus in time.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="There were so many people at the bus station that I had to elbow my way through the crowd to board the bus in time.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="elbow">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">公車站人非常多，因此我不得不用手肘在人群中擠出一條路，才能及時上車。</div>
+      <div class="wordbox">
+        <div><b>elbow</b><span>用手肘推擠；擠出一條路</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="elbow one&#x27;s way through the crowd">▶</button>
+              <div><strong>elbow one&#x27;s way through the crowd</strong><small>在人群中推擠前進</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="board the bus">▶</button>
+              <div><strong>board the bus</strong><small>上公車</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="in time">▶</button>
+              <div><strong>in time</strong><small>及時；來得及</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="so many people that">▶</button>
+              <div><strong>so many people that</strong><small>如此多人以至於……</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="crash">crash <span>猛撞；撞毀</span></button><button class="chip speak" data-text="tumble">tumble <span>跌倒；翻滾</span></button><button class="chip speak" data-text="elbow">elbow <span>用手肘推擠</span></button><button class="chip speak" data-text="struggle">struggle <span>掙扎；奮鬥</span></button></div>
+    </section>
+    
+    <section class="card" id="q10">
+      <div class="qhead">
+        <span class="qnum">第 10 題</span>
+        <span class="answer">答案：grave</span>
+      </div>
+      <div class="sentence">Deadly shootings on U.S. campuses have raised grave concerns about how to prevent such tragic incidents from happening again.</div>
+      <div class="actions">
+        <button class="primary speak" data-text="Deadly shootings on U.S. campuses have raised grave concerns about how to prevent such tragic incidents from happening again.">▶ 朗讀整句</button>
+        <button class="secondary speak" data-text="grave">🔤 朗讀單字</button>
+      </div>
+      <div class="translation">美國校園發生的致命槍擊事件，引發了人們對於如何防止這類悲劇再次發生的嚴重憂慮。</div>
+      <div class="wordbox">
+        <div><b>grave</b><span>嚴重的；重大的</span></div>
+      </div>
+      <h3>片語朗讀</h3>
+      <div class="phrases"><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="raise grave concerns about">▶</button>
+              <div><strong>raise grave concerns about</strong><small>引起對……的嚴重憂慮</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="prevent something from happening">▶</button>
+              <div><strong>prevent something from happening</strong><small>防止某事發生</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="tragic incidents">▶</button>
+              <div><strong>tragic incidents</strong><small>悲劇事件</small></div>
+            </div><div class="phrase-row">
+              <button class="play-mini speak" aria-label="朗讀片語" data-text="happen again">▶</button>
+              <div><strong>happen again</strong><small>再次發生</small></div>
+            </div></div>
+      <h3>選項朗讀</h3>
+      <div class="chips"><button class="chip speak" data-text="swift">swift <span>迅速的</span></button><button class="chip speak" data-text="brutal">brutal <span>殘酷的；暴力的</span></button><button class="chip speak" data-text="harsh">harsh <span>嚴厲的；惡劣的</span></button><button class="chip speak" data-text="grave">grave <span>嚴重的；重大的</span></button></div>
+    </section>
+    
+</main>
+<footer>使用裝置內建英文語音朗讀，不需另外安裝音檔。</footer>
+
+<script>
+(() => {
+  const synth = window.speechSynthesis;
+  const rateEl = document.getElementById('rate');
+  const voiceModeEl = document.getElementById('voiceMode');
+  let activeButton = null;
+
+  function chooseVoice(lang) {
+    const voices = synth.getVoices();
+    return voices.find(v => v.lang === lang)
+      || voices.find(v => v.lang && v.lang.startsWith(lang.slice(0,2)))
+      || null;
+  }
+
+  function stopSpeech() {
+    synth.cancel();
+    if (activeButton) activeButton.classList.remove('playing');
+    activeButton = null;
+  }
+
+  function speak(text, button) {
+    stopSpeech();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = voiceModeEl.value;
+    utter.rate = parseFloat(rateEl.value);
+    utter.pitch = 1;
+    const voice = chooseVoice(utter.lang);
+    if (voice) utter.voice = voice;
+    activeButton = button;
+    button.classList.add('playing');
+    utter.onend = () => {
+      button.classList.remove('playing');
+      if (activeButton === button) activeButton = null;
+    };
+    utter.onerror = () => {
+      button.classList.remove('playing');
+      if (activeButton === button) activeButton = null;
+    };
+    synth.speak(utter);
+  }
+
+  document.querySelectorAll('.speak').forEach(btn => {
+    btn.addEventListener('click', () => speak(btn.dataset.text, btn));
+  });
+  document.getElementById('stop').addEventListener('click', stopSpeech);
+  window.addEventListener('beforeunload', stopSpeech);
+  if ('onvoiceschanged' in speechSynthesis) speechSynthesis.onvoiceschanged = () => synth.getVoices();
+})();
+</script>
+</body>
+</html>
