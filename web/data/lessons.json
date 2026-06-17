@@ -62,5 +62,21 @@
     "updatedAt": "2026-06-16",
     "featured": true,
     "externalUrl": "full/english-heteronyms-reading.html"
+  },
+  {
+    "id": "lesson-north-star-unit-1-reading",
+    "slug": "north-star-unit-1-reading",
+    "title": "The North Star：Unit 1 朗讀學習輔助版",
+    "language": "english",
+    "level": "B1-B2",
+    "topic": "Navigation, Polaris, Vocabulary, and Listening Practice",
+    "estimatedTime": "25 minutes",
+    "shortDescription": "4000 Essential English Words 6 Unit 1 學習輔助頁：20 個目標字、自製短文、中文理解、例句朗讀與練習。",
+    "coverImage": "",
+    "tags": ["vocabulary", "reading", "listening", "north star", "Polaris"],
+    "publishedAt": "2026-06-16",
+    "updatedAt": "2026-06-16",
+    "featured": true,
+    "externalUrl": "full/north-star-unit-1-reading.html"
   }
 ]

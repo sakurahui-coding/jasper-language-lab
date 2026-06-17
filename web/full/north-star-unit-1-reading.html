@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102A43">
+  <meta name="description" content="4000 Essential English Words 6 Unit 1: The North Star 學習輔助朗讀版，含目標字、中文解釋、自製例句、短文朗讀與練習。">
+  <title>The North Star｜Unit 1 學習輔助朗讀版</title>
+  <style>
+    :root {
+      --bg: #f5f8fb;
+      --surface: #ffffff;
+      --surface-soft: #eef6f9;
+      --ink: #172033;
+      --muted: #64748b;
+      --line: #d8e3ee;
+      --brand: #102a43;
+      --brand-2: #0f766e;
+      --accent: #b45309;
+      --blue-soft: #eaf2ff;
+      --green-soft: #e8f7f1;
+      --gold-soft: #fff7e6;
+      --shadow: 0 16px 40px rgba(16, 42, 67, .1);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Noto Sans", Arial, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, .94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .topbar-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 10px 14px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    button, select, input { font: inherit; }
+    button, .nav-link {
+      min-height: 40px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      padding: 8px 11px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    button.secondary, .nav-link.secondary {
+      color: var(--brand);
+      background: var(--surface-soft);
+      border-color: var(--line);
+    }
+    button.stop { background: #b42318; }
+    select, input {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 10px;
+    }
+    input { flex: 1 1 180px; min-width: 0; }
+    main { max-width: 1080px; margin: 0 auto; padding: 18px 14px 64px; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(250px, .85fr);
+      gap: 18px;
+      align-items: end;
+      padding: 28px 0 18px;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--brand-2);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(2.1rem, 7vw, 4.4rem); line-height: 1; letter-spacing: 0; }
+    .lead { margin: 0; color: #3b4658; font-size: clamp(1.04rem, 2.8vw, 1.25rem); }
+    .hero-card, .notice, .panel, .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-card { padding: 16px; }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .stat { background: var(--surface-soft); border-radius: 12px; padding: 10px; }
+    .stat strong { display: block; font-size: 1.35rem; line-height: 1.1; }
+    .stat span { color: var(--muted); font-size: .86rem; }
+    .notice {
+      margin-bottom: 14px;
+      padding: 13px 15px;
+      background: var(--gold-soft);
+      box-shadow: none;
+      border-color: #f1d28a;
+    }
+    .notice p { margin: 0; }
+    .section-title { margin: 26px 0 12px; font-size: 1.45rem; }
+    .reading-panel { padding: 16px; }
+    .sentence {
+      margin: 0 0 12px;
+      padding: 13px 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 5px solid transparent;
+      border-radius: 12px;
+    }
+    .sentence.is-playing { border-left-color: var(--brand-2); background: #f0fbf7; }
+    .sentence p { margin: 0 0 8px; }
+    .sentence p:last-child { margin-bottom: 0; }
+    .term {
+      display: inline;
+      border-radius: 5px;
+      padding: 0 .15rem;
+      color: var(--brand-2);
+      background: #e8f7f1;
+      font-weight: 900;
+    }
+    .translation { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .card { padding: 15px; box-shadow: 0 8px 22px rgba(16, 42, 67, .06); }
+    .card.is-playing { outline: 3px solid rgba(15, 118, 110, .24); }
+    .word-head { display: flex; align-items: start; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+    .word-head h3 { margin: 0; color: var(--brand); font-size: 1.65rem; line-height: 1.1; }
+    .ipa { margin-top: 4px; color: var(--muted); font-weight: 800; }
+    .definition {
+      display: grid;
+      gap: 7px;
+      padding: 10px 11px;
+      border-radius: 12px;
+      background: var(--blue-soft);
+    }
+    .definition strong { color: var(--brand-2); }
+    .example {
+      margin: 10px 0 0;
+      padding: 10px 11px;
+      border-radius: 12px;
+      background: var(--green-soft);
+    }
+    .example p { margin: 0 0 8px; }
+    .practice-list { display: grid; gap: 10px; margin: 0; padding-left: 1.2rem; }
+    .practice-list li { padding-left: .2rem; }
+    .answer { color: var(--brand-2); font-weight: 900; }
+    .hidden { display: none !important; }
+    footer { max-width: 1080px; margin: 0 auto; padding: 0 14px 34px; color: var(--muted); }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; padding-top: 18px; }
+      .grid { grid-template-columns: 1fr; }
+      .topbar-inner { align-items: stretch; }
+      .topbar-inner button, .topbar-inner .nav-link { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="nav-link secondary" href="../lessons.html">← 教材列表</a>
+      <button id="readStory">▶ 朗讀短文</button>
+      <button id="readWords" class="secondary">▶ 朗讀單字</button>
+      <button id="stop" class="stop">■ 停止</button>
+      <select id="rate" aria-label="朗讀速度">
+        <option value="0.75">0.75×</option>
+        <option value="0.9">0.9×</option>
+        <option value="1" selected>1.0×</option>
+        <option value="1.15">1.15×</option>
+        <option value="1.3">1.3×</option>
+      </select>
+      <input id="search" type="search" placeholder="搜尋單字、中文或例句" aria-label="搜尋單字、中文或例句">
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">4000 Essential English Words 6 · Unit 1 Companion</p>
+        <h1 id="page-title">The North Star</h1>
+        <p class="lead">以 Polaris 北極星為主題的朗讀學習輔助頁。這份教材整理 Unit 1 的目標字，搭配自製短文、中文理解、例句朗讀與練習，方便手機反覆聽讀。</p>
+      </div>
+      <aside class="hero-card" aria-label="教材摘要">
+        <div class="stats">
+          <div class="stat"><strong>20</strong><span>目標單字</span></div>
+          <div class="stat"><strong>6</strong><span>朗讀段落</span></div>
+          <div class="stat"><strong>8</strong><span>練習題</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="notice">
+      <p><strong>來源說明：</strong>本頁為學習輔助整理，使用 Unit 1 目標字與主題重新編寫短文與練習，不重製原站完整故事。原始來源：<a href="https://www.essentialenglish.review/apps/4000-essential-english-words-6/unit-1-the-north-star#0" target="_blank" rel="noopener noreferrer">Essential English Review · Unit 1: The North Star</a></p>
+    </section>
+
+    <h2 class="section-title">朗讀短文</h2>
+    <section class="panel reading-panel" id="story" aria-label="自製朗讀短文">
+      <article class="sentence" data-text="Among the multitude of stars, Polaris is special because it stays almost fixed in the northern sky.">
+        <p>Among the <span class="term">multitude</span> of stars, Polaris is special because it stays almost fixed in the northern sky.</p>
+        <p class="translation">在眾多星星之中，北極星很特別，因為它幾乎固定在北方天空。</p>
+      </article>
+      <article class="sentence" data-text="For a mariner, that permanence was more than beauty; it was a natural compass.">
+        <p>For a <span class="term">mariner</span>, that <span class="term">permanence</span> was more than beauty; it was a natural compass.</p>
+        <p class="translation">對水手而言，這種恆定不只是美麗，而是一個天然羅盤。</p>
+      </article>
+      <article class="sentence" data-text="Before modern tools, sailors used the horizon and the North Star to estimate latitude.">
+        <p>Before modern tools, sailors used the horizon and the North Star to estimate <span class="term">latitude</span>.</p>
+        <p class="translation">在現代工具出現以前，水手利用地平線與北極星估算緯度。</p>
+      </article>
+      <article class="sentence" data-text="If their equation was erroneous, they could err and lose the correct direction.">
+        <p>If their <span class="term">equation</span> was <span class="term">erroneous</span>, they could <span class="term">err</span> and lose the correct direction.</p>
+        <p class="translation">如果計算式錯了，他們可能會判斷失誤，失去正確方向。</p>
+      </article>
+      <article class="sentence" data-text="Volatile storms could disrupt a journey, leave a ship stranded, and make a captain frantic.">
+        <p><span class="term">Volatile</span> storms could <span class="term">disrupt</span> a journey, leave a ship <span class="term">stranded</span>, and make a captain <span class="term">frantic</span>.</p>
+        <p class="translation">變化劇烈的暴風雨可能中斷航程，使船受困，並讓船長慌亂。</p>
+      </article>
+      <article class="sentence" data-text="When the clouds cleared, the sight of Polaris could soothe fear and alleviate confusion.">
+        <p>When the clouds cleared, the sight of Polaris could <span class="term">soothe</span> fear and <span class="term">alleviate</span> confusion.</p>
+        <p class="translation">雲層散開時，看見北極星能安撫恐懼、減輕迷惘。</p>
+      </article>
+    </section>
+
+    <h2 class="section-title">目標單字</h2>
+    <section class="grid" id="wordGrid" aria-label="目標單字卡"></section>
+
+    <h2 class="section-title">練習題</h2>
+    <section class="panel reading-panel">
+      <ol class="practice-list">
+        <li>Which word means a very large number? <span class="answer">multitude</span></li>
+        <li>Which word means a sailor? <span class="answer">mariner</span></li>
+        <li>Which word means incorrect? <span class="answer">erroneous</span></li>
+        <li>Which word means to calm someone? <span class="answer">soothe</span></li>
+        <li>Which word means annoying problem? <span class="answer">nuisance</span></li>
+        <li>Which word means unable to leave a place? <span class="answer">stranded</span></li>
+        <li>Complete the idea: Storms can ______ a journey. <span class="answer">disrupt</span></li>
+        <li>Complete the idea: Sailors used Polaris to estimate ______. <span class="answer">latitude</span></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>朗讀功能使用瀏覽器 Web Speech API。若手機沒有聲音，請先點任一朗讀按鈕啟用語音。</footer>
+
+  <script id="word-data" type="application/json">
+[
+  {"word":"alleviate","ipa":"[əˈliːvieit]","pos":"v.","zh":"減輕；緩和","definition":"make pain, worry, or difficulty less serious","example":"Clear directions can alleviate a traveler’s fear."},
+  {"word":"astrology","ipa":"[əsˈtrɒlədʒi]","pos":"n.","zh":"占星術","definition":"the belief that stars influence people’s lives","example":"Astrology studies stars in a very different way from astronomy."},
+  {"word":"differentiate","ipa":"[difəˈrenʃieit]","pos":"v.","zh":"區分；辨別","definition":"show or recognize the difference between things","example":"It is easy to differentiate Polaris from many other stars."},
+  {"word":"disrupt","ipa":"[disˈrʌpt]","pos":"v.","zh":"打亂；中斷","definition":"stop something from continuing normally","example":"Heavy clouds can disrupt navigation at night."},
+  {"word":"equation","ipa":"[iˈkweiʒən]","pos":"n.","zh":"方程式；計算式","definition":"a mathematical statement used to find a value","example":"The old navigator checked his equation again."},
+  {"word":"err","ipa":"[əːr]","pos":"v.","zh":"犯錯；失誤","definition":"make a mistake","example":"If sailors err, they may sail in the wrong direction."},
+  {"word":"erroneous","ipa":"[iˈrouniəs]","pos":"adj.","zh":"錯誤的","definition":"wrong or based on a mistake","example":"An erroneous map can be dangerous at sea."},
+  {"word":"frantic","ipa":"[ˈfræntik]","pos":"adj.","zh":"慌亂的；狂亂的","definition":"wild with fear, worry, or hurry","example":"The crew became frantic during the storm."},
+  {"word":"hull","ipa":"[hʌl]","pos":"n.","zh":"船身；船殼","definition":"the main body of a ship or boat","example":"Waves hit the hull throughout the night."},
+  {"word":"inadvertent","ipa":"[inədˈvəːrtənt]","pos":"adj.","zh":"無意的；不小心的","definition":"done without intention or awareness","example":"An inadvertent turn took the ship away from its route."},
+  {"word":"improvise","ipa":"[ˈimprəvaiz]","pos":"v.","zh":"即興處理；臨時應變","definition":"act without a prepared plan, using what is available","example":"The captain had to improvise when the compass failed."},
+  {"word":"latitude","ipa":"[ˈlӕtətjuːd]","pos":"n.","zh":"緯度","definition":"distance north or south of the equator","example":"Polaris helped sailors estimate latitude."},
+  {"word":"mariner","ipa":"[ˈmærənə:r]","pos":"n.","zh":"水手；船員","definition":"a sailor","example":"A skilled mariner can read the night sky."},
+  {"word":"multitude","ipa":"[ˈmʌltitjuːd]","pos":"n.","zh":"大量；眾多","definition":"a very large number of people or things","example":"A multitude of stars filled the sky."},
+  {"word":"nuisance","ipa":"[ˈnjuːsəns]","pos":"n.","zh":"麻煩事；討厭的人或物","definition":"something annoying or troublesome","example":"For sailors, clouds were more than a nuisance."},
+  {"word":"permanence","ipa":"[ˈpəːrmənəns]","pos":"n.","zh":"永久性；恆定","definition":"the quality of lasting for a long time","example":"The permanence of Polaris made it useful."},
+  {"word":"revolve","ipa":"[riˈvɒlv]","pos":"v.","zh":"圍繞；旋轉","definition":"move around something or focus on something","example":"The lesson revolves around the North Star."},
+  {"word":"soothe","ipa":"[suːð]","pos":"v.","zh":"安撫；緩和","definition":"calm or comfort someone","example":"The sight of land soothed the worried sailors."},
+  {"word":"stranded","ipa":"[ˈstrændid]","pos":"adj.","zh":"受困的；滯留的","definition":"unable to leave a place","example":"The ship was stranded far from shore."},
+  {"word":"volatile","ipa":"[ˈvɒlətil]","pos":"adj.","zh":"易變的；不穩定的","definition":"likely to change suddenly and unexpectedly","example":"Volatile weather made the journey risky."}
+]
+  </script>
+  <script>
+    const words = JSON.parse(document.getElementById("word-data").textContent);
+    const grid = document.getElementById("wordGrid");
+    const search = document.getElementById("search");
+    const rate = document.getElementById("rate");
+    let queue = [];
+    let active = null;
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[char]));
+    }
+
+    function getVoice() {
+      const voices = speechSynthesis.getVoices();
+      return voices.find((voice) => voice.lang === "en-US") || voices.find((voice) => voice.lang.startsWith("en")) || voices[0];
+    }
+
+    function clearActive() {
+      if (active) active.classList.remove("is-playing");
+      active = null;
+    }
+
+    function speak(text, element) {
+      speechSynthesis.cancel();
+      clearActive();
+      active = element || null;
+      if (active) active.classList.add("is-playing");
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "en-US";
+      utterance.rate = Number(rate.value);
+      const voice = getVoice();
+      if (voice) utterance.voice = voice;
+      utterance.onend = () => clearActive();
+      speechSynthesis.speak(utterance);
+    }
+
+    function speakNext() {
+      if (!queue.length) {
+        clearActive();
+        return;
+      }
+      const next = queue.shift();
+      speechSynthesis.cancel();
+      clearActive();
+      active = next.element;
+      active.classList.add("is-playing");
+      active.scrollIntoView({ behavior: "smooth", block: "center" });
+      const utterance = new SpeechSynthesisUtterance(next.text);
+      utterance.lang = "en-US";
+      utterance.rate = Number(rate.value);
+      const voice = getVoice();
+      if (voice) utterance.voice = voice;
+      utterance.onend = speakNext;
+      utterance.onerror = clearActive;
+      speechSynthesis.speak(utterance);
+    }
+
+    function renderWords() {
+      words.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.dataset.search = [item.word, item.ipa, item.pos, item.zh, item.definition, item.example].join(" ").toLowerCase();
+        card.innerHTML = `
+          <div class="word-head">
+            <div>
+              <h3>${escapeHtml(item.word)}</h3>
+              <div class="ipa">${escapeHtml(item.ipa)} ${escapeHtml(item.pos)}</div>
+            </div>
+            <button class="secondary" type="button" data-speak="${escapeHtml(item.word)}">🔊 單字</button>
+          </div>
+          <div class="definition">
+            <strong>${escapeHtml(item.zh)}</strong>
+            <span>${escapeHtml(item.definition)}</span>
+          </div>
+          <div class="example">
+            <p>${escapeHtml(item.example)}</p>
+            <button class="secondary" type="button" data-speak="${escapeHtml(item.example)}">▶ 朗讀例句</button>
+          </div>`;
+        grid.append(card);
+      });
+    }
+
+    document.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-speak]");
+      if (!button) return;
+      speak(button.dataset.speak, button.closest(".card, .sentence"));
+    });
+
+    document.getElementById("readStory").addEventListener("click", () => {
+      queue = Array.from(document.querySelectorAll(".sentence")).map((item) => ({ text: item.dataset.text, element: item }));
+      speakNext();
+    });
+
+    document.getElementById("readWords").addEventListener("click", () => {
+      queue = Array.from(document.querySelectorAll("#wordGrid .card:not(.hidden)")).map((item) => {
+        const word = item.querySelector("h3").textContent;
+        const example = item.querySelector(".example p").textContent;
+        return { text: `${word}. ${example}`, element: item };
+      });
+      speakNext();
+    });
+
+    document.getElementById("stop").addEventListener("click", () => {
+      queue = [];
+      speechSynthesis.cancel();
+      clearActive();
+    });
+
+    search.addEventListener("input", () => {
+      const keyword = search.value.trim().toLowerCase();
+      document.querySelectorAll("#wordGrid .card").forEach((card) => {
+        card.classList.toggle("hidden", keyword && !card.dataset.search.includes(keyword));
+      });
+    });
+
+    speechSynthesis.onvoiceschanged = getVoice;
+    renderWords();
+  </script>
+</body>
+</html>
